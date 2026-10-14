@@ -1,0 +1,658 @@
+{
+ "pages": {
+  "index.html": {
+   "size": 41698,
+   "chars": 28384,
+   "lines": 536,
+   "tags": {
+    "div": [
+     104,
+     104,
+     0
+    ],
+    "section": [
+     6,
+     6,
+     0
+    ],
+    "p": [
+     74,
+     74,
+     0
+    ],
+    "li": [
+     0,
+     0,
+     0
+    ],
+    "ul": [
+     0,
+     0,
+     0
+    ],
+    "ol": [
+     0,
+     0,
+     0
+    ],
+    "h1": [
+     1,
+     1,
+     0
+    ],
+    "h2": [
+     6,
+     6,
+     0
+    ],
+    "h3": [
+     11,
+     11,
+     0
+    ],
+    "h4": [
+     6,
+     6,
+     0
+    ],
+    "blockquote": [
+     0,
+     0,
+     0
+    ],
+    "cite": [
+     0,
+     0,
+     0
+    ],
+    "span": [
+     117,
+     117,
+     0
+    ],
+    "a": [
+     15,
+     15,
+     0
+    ],
+    "table": [
+     0,
+     0,
+     0
+    ],
+    "tr": [
+     0,
+     0,
+     0
+    ],
+    "td": [
+     0,
+     0,
+     0
+    ],
+    "th": [
+     0,
+     0,
+     0
+    ],
+    "nav": [
+     0,
+     0,
+     0
+    ],
+    "main": [
+     1,
+     1,
+     0
+    ],
+    "header": [
+     1,
+     1,
+     0
+    ],
+    "footer": [
+     1,
+     1,
+     0
+    ],
+    "button": [
+     14,
+     14,
+     0
+    ],
+    "svg": [
+     4,
+     4,
+     0
+    ],
+    "mark": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ids": 17,
+   "dup_ids": [],
+   "sections": 6,
+   "toc_links": 0,
+   "n_tag_fact": 9,
+   "n_tag_mid": 5,
+   "n_tag_low": 3,
+   "n_topic_tag": 0,
+   "n_cite": 0,
+   "n_cite_tagged": 0,
+   "n_card": 0,
+   "n_idxrow": 0,
+   "n_inline_style": 0,
+   "n_btn_noname": 0,
+   "n_a_noname": 0,
+   "n_img": 0,
+   "n_img_alt": 0,
+   "n_btn": 14,
+   "n_btn_aria": 2,
+   "n_a_ext": 3,
+   "n_a_ext_rel": 3,
+   "n_table": 0,
+   "n_tablewrap": 0
+  },
+  "2016-2017-wealthfreedom.html": {
+   "size": 197957,
+   "chars": 115405,
+   "lines": 1807,
+   "tags": {
+    "div": [
+     532,
+     532,
+     0
+    ],
+    "section": [
+     26,
+     26,
+     0
+    ],
+    "p": [
+     432,
+     432,
+     0
+    ],
+    "li": [
+     40,
+     40,
+     0
+    ],
+    "ul": [
+     10,
+     10,
+     0
+    ],
+    "ol": [
+     0,
+     0,
+     0
+    ],
+    "h1": [
+     1,
+     1,
+     0
+    ],
+    "h2": [
+     26,
+     26,
+     0
+    ],
+    "h3": [
+     171,
+     171,
+     0
+    ],
+    "h4": [
+     1,
+     1,
+     0
+    ],
+    "blockquote": [
+     34,
+     34,
+     0
+    ],
+    "cite": [
+     34,
+     34,
+     0
+    ],
+    "span": [
+     785,
+     785,
+     0
+    ],
+    "a": [
+     36,
+     36,
+     0
+    ],
+    "table": [
+     0,
+     0,
+     0
+    ],
+    "tr": [
+     0,
+     0,
+     0
+    ],
+    "td": [
+     0,
+     0,
+     0
+    ],
+    "th": [
+     0,
+     0,
+     0
+    ],
+    "nav": [
+     1,
+     1,
+     0
+    ],
+    "main": [
+     1,
+     1,
+     0
+    ],
+    "header": [
+     1,
+     1,
+     0
+    ],
+    "footer": [
+     1,
+     1,
+     0
+    ],
+    "button": [
+     20,
+     20,
+     0
+    ],
+    "svg": [
+     5,
+     5,
+     0
+    ],
+    "mark": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ids": 41,
+   "dup_ids": [],
+   "sections": 26,
+   "toc_links": 29,
+   "n_tag_fact": 35,
+   "n_tag_mid": 41,
+   "n_tag_low": 6,
+   "n_topic_tag": 158,
+   "n_cite": 34,
+   "n_cite_tagged": 34,
+   "n_card": 158,
+   "n_idxrow": 148,
+   "n_inline_style": 0,
+   "n_btn_noname": 0,
+   "n_a_noname": 0,
+   "n_img": 0,
+   "n_img_alt": 0,
+   "n_btn": 20,
+   "n_btn_aria": 6,
+   "n_a_ext": 1,
+   "n_a_ext_rel": 1,
+   "n_table": 0,
+   "n_tablewrap": 0
+  },
+  "2026-interview.html": {
+   "size": 65658,
+   "chars": 40726,
+   "lines": 810,
+   "tags": {
+    "div": [
+     110,
+     110,
+     0
+    ],
+    "section": [
+     14,
+     14,
+     0
+    ],
+    "p": [
+     103,
+     103,
+     0
+    ],
+    "li": [
+     38,
+     38,
+     0
+    ],
+    "ul": [
+     9,
+     9,
+     0
+    ],
+    "ol": [
+     0,
+     0,
+     0
+    ],
+    "h1": [
+     1,
+     1,
+     0
+    ],
+    "h2": [
+     14,
+     14,
+     0
+    ],
+    "h3": [
+     60,
+     60,
+     0
+    ],
+    "h4": [
+     1,
+     1,
+     0
+    ],
+    "blockquote": [
+     16,
+     16,
+     0
+    ],
+    "cite": [
+     16,
+     16,
+     0
+    ],
+    "span": [
+     168,
+     168,
+     0
+    ],
+    "a": [
+     24,
+     24,
+     0
+    ],
+    "table": [
+     0,
+     0,
+     0
+    ],
+    "tr": [
+     0,
+     0,
+     0
+    ],
+    "td": [
+     0,
+     0,
+     0
+    ],
+    "th": [
+     0,
+     0,
+     0
+    ],
+    "nav": [
+     1,
+     1,
+     0
+    ],
+    "main": [
+     1,
+     1,
+     0
+    ],
+    "header": [
+     1,
+     1,
+     0
+    ],
+    "footer": [
+     1,
+     1,
+     0
+    ],
+    "button": [
+     19,
+     19,
+     0
+    ],
+    "svg": [
+     5,
+     5,
+     0
+    ],
+    "mark": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ids": 29,
+   "dup_ids": [],
+   "sections": 14,
+   "toc_links": 16,
+   "n_tag_fact": 35,
+   "n_tag_mid": 5,
+   "n_tag_low": 2,
+   "n_topic_tag": 51,
+   "n_cite": 16,
+   "n_cite_tagged": 16,
+   "n_card": 51,
+   "n_idxrow": 0,
+   "n_inline_style": 0,
+   "n_btn_noname": 0,
+   "n_a_noname": 0,
+   "n_img": 0,
+   "n_img_alt": 0,
+   "n_btn": 19,
+   "n_btn_aria": 5,
+   "n_a_ext": 2,
+   "n_a_ext_rel": 2,
+   "n_table": 0,
+   "n_tablewrap": 0
+  },
+  "audit.html": {
+   "size": 44453,
+   "chars": 31783,
+   "lines": 646,
+   "tags": {
+    "div": [
+     88,
+     88,
+     0
+    ],
+    "section": [
+     10,
+     10,
+     0
+    ],
+    "p": [
+     68,
+     68,
+     0
+    ],
+    "li": [
+     6,
+     6,
+     0
+    ],
+    "ul": [
+     1,
+     1,
+     0
+    ],
+    "ol": [
+     0,
+     0,
+     0
+    ],
+    "h1": [
+     1,
+     1,
+     0
+    ],
+    "h2": [
+     10,
+     10,
+     0
+    ],
+    "h3": [
+     38,
+     38,
+     0
+    ],
+    "h4": [
+     1,
+     1,
+     0
+    ],
+    "blockquote": [
+     0,
+     0,
+     0
+    ],
+    "cite": [
+     0,
+     0,
+     0
+    ],
+    "span": [
+     124,
+     124,
+     0
+    ],
+    "a": [
+     25,
+     25,
+     0
+    ],
+    "table": [
+     6,
+     6,
+     0
+    ],
+    "tr": [
+     43,
+     43,
+     0
+    ],
+    "td": [
+     210,
+     210,
+     0
+    ],
+    "th": [
+     41,
+     41,
+     0
+    ],
+    "nav": [
+     1,
+     1,
+     0
+    ],
+    "main": [
+     1,
+     1,
+     0
+    ],
+    "header": [
+     1,
+     1,
+     0
+    ],
+    "footer": [
+     1,
+     1,
+     0
+    ],
+    "button": [
+     21,
+     21,
+     0
+    ],
+    "svg": [
+     5,
+     5,
+     0
+    ],
+    "mark": [
+     0,
+     0,
+     0
+    ]
+   },
+   "ids": 25,
+   "dup_ids": [],
+   "sections": 10,
+   "toc_links": 14,
+   "n_tag_fact": 7,
+   "n_tag_mid": 15,
+   "n_tag_low": 4,
+   "n_topic_tag": 35,
+   "n_cite": 0,
+   "n_cite_tagged": 0,
+   "n_card": 35,
+   "n_idxrow": 0,
+   "n_inline_style": 0,
+   "n_btn_noname": 0,
+   "n_a_noname": 0,
+   "n_img": 0,
+   "n_img_alt": 0,
+   "n_btn": 21,
+   "n_btn_aria": 7,
+   "n_a_ext": 5,
+   "n_a_ext_rel": 5,
+   "n_table": 6,
+   "n_tablewrap": 6
+  }
+ },
+ "align": {
+  "2016-2017-wealthfreedom.html": {
+   "hrefs": 29,
+   "missing": [],
+   "secs": 26,
+   "notoc": []
+  },
+  "2026-interview.html": {
+   "hrefs": 16,
+   "missing": [],
+   "secs": 14,
+   "notoc": []
+  }
+ },
+ "index": {
+  "total": 47,
+  "by_vol": {
+   "总览": 6,
+   "审计": 1,
+   "卷一": 26,
+   "卷二": 14
+  },
+  "bad": []
+ },
+ "assets": {
+  "assets/site.css": true,
+  "2016-2017-wealthfreedom.html": true,
+  "2026-interview.html": true,
+  "2016-2017-wealthfreedom.html#s25": true,
+  "2026-interview.html#s12": true,
+  "audit.html": true,
+  "assets/site.js": true,
+  "index.html": true
+ }
+}

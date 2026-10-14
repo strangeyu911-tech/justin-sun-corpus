@@ -1,0 +1,4 @@
+# 统一行尾为 LF，保证行数与校验一致
+* text=auto eol=lf
+
+*.png binary

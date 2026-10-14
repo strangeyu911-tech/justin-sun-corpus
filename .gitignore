@@ -1,0 +1,9 @@
+# 构建中间产物（按 _build/README.md 重跑即可再生成）
+_build/*_main.html
+_build/*_proc.html
+_build/*_foot.html
+
+# 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store

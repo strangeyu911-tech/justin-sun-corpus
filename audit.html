@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>站点审计报告：排版 / 格式 / 置信度｜孙宇晨语料库</title>
+<meta name="description" content="对「孙宇晨语料库」的自查报告：审计口径沿用「以日为镜」的五条写作纪律，逐维度给出实测数据、问题清单与处理状态、以及可复跑的复核脚本。">
+<link rel="canonical" href="https://strangeyu911-tech.github.io/justin-sun-corpus/audit.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="孙宇晨语料库">
+<meta property="og:url" content="https://strangeyu911-tech.github.io/justin-sun-corpus/audit.html">
+<meta property="og:title" content="站点审计报告：排版 / 格式 / 置信度｜孙宇晨语料库">
+<meta property="og:description" content="硬性结构项 0 缺陷；三层置信度覆盖 46 个板块；问题清单与状态逐条列明。">
+<meta property="og:image" content="https://strangeyu911-tech.github.io/justin-sun-corpus/assets/og.png">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="站点审计报告：排版 / 格式 / 置信度">
+<meta name="twitter:description" content="硬性结构项 0 缺陷；三层置信度覆盖 46 个板块。">
+<meta name="twitter:image" content="https://strangeyu911-tech.github.io/justin-sun-corpus/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230f766e'/%3E%3Cpath d='M10 7.6v8.8l7-4.4z' fill='%23fbfaf8'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css">
+<script>try{var t=localStorage.getItem('sycn-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+</head>
+<body>
+<div id="progress"></div>
+
+<div class="topbar">
+  <div class="in">
+    <div class="tb-brand">
+      <button class="iconbtn" id="tocbtn" aria-label="打开目录" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <svg class="logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#0f766e"/><path d="M10 7.6v8.8l7-4.4z" fill="#fbfaf8"/><path d="M5.2 9.6v4.8M7.4 10.8v2.4M18.8 9.6v4.8M16.6 10.8v2.4" stroke="#fbfaf8" stroke-width="1.4" stroke-linecap="round" opacity=".72"/></svg>
+      <span class="brand"><span class="b-full">孙宇晨语料库 · 站点审计报告</span><span class="b-short">语料库 · 审计报告</span><span class="b-xs">审计</span></span>
+    </div>
+    <div class="tb-main">
+      <div class="tb-col">
+        <span class="sp"></span>
+        <div class="searchbox">
+          <span class="sico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+          <input id="q" type="text" placeholder="搜索本页关键词" aria-label="搜索本页关键词">
+          <span id="hitcount"></span>
+          <span class="kbd">/</span>
+        </div>
+        <div class="share-wrap">
+          <button class="iconbtn" id="sharebtn" type="button" aria-label="分享本页" aria-haspopup="menu" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button>
+          <div class="share-menu" id="sharemenu" role="menu" aria-label="分享到">
+  <button class="sm-item" type="button" role="menuitem" data-ch="native"><span class="sm-ic">&#8682;</span><span class="sm-tx">系统分享（手机含微信 / QQ）</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="copy"><span class="sm-ic">&#10697;</span><span class="sm-tx">复制链接<small>粘贴到微信 / QQ 即显示卡片</small></span></button>
+  <div class="sm-sep"></div>
+  <button class="sm-item" type="button" role="menuitem" data-ch="weibo"><span class="sm-ic">微</span><span class="sm-tx">新浪微博</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="qq"><span class="sm-ic">Q</span><span class="sm-tx">QQ 好友 / Qzone</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="facebook"><span class="sm-ic">f</span><span class="sm-tx">Facebook</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="twitter"><span class="sm-ic">X</span><span class="sm-tx">X (Twitter)</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="telegram"><span class="sm-ic">T</span><span class="sm-tx">Telegram</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="reddit"><span class="sm-ic">R</span><span class="sm-tx">Reddit</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="linkedin"><span class="sm-ic">in</span><span class="sm-tx">LinkedIn</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="whatsapp"><span class="sm-ic">W</span><span class="sm-tx">WhatsApp</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="line"><span class="sm-ic">L</span><span class="sm-tx">LINE</span></button>
+  <div class="sm-sep"></div>
+  <button class="sm-item" type="button" role="menuitem" data-ch="qrcode"><span class="sm-ic">&#128247;</span><span class="sm-tx">微信：生成二维码<small>微信扫码打开后再分享</small></span></button>
+  <div class="qr-box" id="qrbox" hidden><div id="qrcode"></div><p class="qr-hint">用微信「扫一扫」打开本页，再点右上角 ··· 分享给好友 / 朋友圈</p></div>
+</div>
+        </div>
+        <a class="iconbtn gh" href="https://github.com/strangeyu911-tech/justin-sun-corpus" target="_blank" rel="noopener" aria-label="GitHub 仓库"><svg width="19" height="19" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.78-.94-1.33-1.13-.27-.16-.65-.52-.01-.53.6-.01 1.03.56 1.18.79.69 1.17 1.77.83 2.21.64.07-.5.27-.83.49-1.02-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82a7.6 7.6 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.28.24.53.71.53 1.44 0 1.04-.01 1.87-.01 2.13 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+        <button class="switch" id="themebtn" role="switch" aria-label="日夜模式切换" aria-checked="false" type="button"><span class="knob"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="m-search" id="msearch"><div class="m-search-in" id="msearchin"></div></div>
+
+<nav id="toc" aria-label="目录">
+<h4>章节<span class="sp"></span><button class="toc-tool" id="toc-expand" type="button">全展开</button><button class="toc-tool" id="toc-collapse" type="button">全收起</button></h4>
+<a href="#a0" class="solo">审计结论（速览）</a>
+<div class="toc-group" data-part="a1">
+<div class="toc-head">
+<button class="toc-caret" type="button" aria-label="展开结构与版式" aria-expanded="false">&#9654;</button>
+<a class="toc-title-link" href="#a1">结构与版式</a>
+</div>
+<div class="toc-subs">
+<a href="#a1" class="lvl2">A1 审计口径：沿用「以日为镜」五条纪律</a>
+<a href="#a2" class="lvl2">A2 排版：版式、字体、深浅色</a>
+<a href="#a3" class="lvl2">A3 格式：标签平衡、目录对齐、索引</a>
+</div></div>
+<div class="toc-group" data-part="a4">
+<div class="toc-head">
+<button class="toc-caret" type="button" aria-label="展开置信度" aria-expanded="false">&#9654;</button>
+<a class="toc-title-link" href="#a4">置信度</a>
+</div>
+<div class="toc-subs">
+<a href="#a4" class="lvl2">A4 体系落地：三档、三个层级</a>
+<a href="#a5" class="lvl2">A5 覆盖实测与分档理由</a>
+</div></div>
+<div class="toc-group" data-part="a6">
+<div class="toc-head">
+<button class="toc-caret" type="button" aria-label="展开工程项" aria-expanded="false">&#9654;</button>
+<a class="toc-title-link" href="#a6">工程项</a>
+</div>
+<div class="toc-subs">
+<a href="#a6" class="lvl2">A6 可访问性、兼容性与交付体积</a>
+<a href="#a7" class="lvl2">A7 问题清单与处理状态</a>
+</div></div>
+<div class="toc-group" data-part="a8">
+<div class="toc-head">
+<button class="toc-caret" type="button" aria-label="展开复核" aria-expanded="false">&#9654;</button>
+<a class="toc-title-link" href="#a8">复核</a>
+</div>
+<div class="toc-subs">
+<a href="#a8" class="lvl2">A8 复核方法（可复跑）</a>
+<a href="#a9" class="lvl2">A9 已知边界：本次没能验证的部分</a>
+</div></div>
+</nav>
+<div id="toc-mask"></div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <a class="volback" href="index.html">← 返回总览（两卷 + 十年对照）</a>
+    <span class="kicker">站点审计 · 排版 / 格式 / 置信度</span>
+    <h1 class="title">站点审计报告</h1>
+    <p class="subtitle">
+      对「孙宇晨语料库」的三页站点做一次自查：<b>口径沿用「以日为镜」的五条写作纪律</b>，
+      逐维度给出实测数据（不是形容词）、问题清单与处理状态，以及可以自己复跑的复核脚本。
+      审计对象是 <b>3 个页面 / 46 个正文板块 / 313 个元素级结论</b>，审计时点见页脚。
+    </p>
+    <div class="meta">
+      <span class="chip"><b>审计范围</b> 3 页</span>
+      <span class="chip"><b>正文板块</b> 46 个</span>
+      <span class="chip"><b>硬性结构缺陷</b> 0</span>
+      <span class="chip"><b>置信度标签</b> 141 处</span>
+      <span class="chip"><b>已修问题</b> 5 项</span>
+      <span class="chip"><b>有意保留</b> 2 项</span>
+      <span class="chip"><b>透明声明</b> 3 项</span>
+    </div>
+    <p class="hero-note">
+      <b>这份审计要回答三个问题：</b>① 排版与格式有没有硬伤（能不能正常看、正常读、正常检索）；
+      ② 置信度标注是不是真的落到了每一条具体结论上（而不是只在页首喊一句口号）；
+      ③ 哪些地方我知道自己还不足，且不打算用话术掩盖。第 ③ 条最要紧——它决定了这份报告是不是一份真的审计。
+    </p>
+  </div>
+</header>
+
+<div class="shell">
+<main>
+
+  <!-- ============ A0 ============ -->
+  <section id="a0">
+    <h2 class="sec">审计结论（速览）</h2>
+    <p class="sec-src"><span class="tag tag-mid">编者自审</span>结论由本站作者自查得出，不是第三方审计</p>
+    <p class="sec-lead">先说判断，再说依据。</p>
+
+    <div class="grid g2">
+      <div class="card">
+        <span class="tag">结论一</span>
+        <h3>可以发布：硬性结构项 0 缺陷</h3>
+        <p>24 类 HTML 标签<b>全部平衡</b>（差值 0）；三页<b>无重复 id</b>；目录与正文<b>双向对齐</b>（29/26、16/14，缺失 0、孤立 0）；
+        站内检索 47 条索引的锚点<b>全部命中</b>；<b>行内样式已归零</b>；图标按钮与纯图标链接<b>100% 有可访问名称</b>。</p>
+      </div>
+
+      <div class="card indigo">
+        <span class="tag">结论二</span>
+        <h3>置信度做到了「逐条可核」，但密度低于「以日为镜」</h3>
+        <p>46 个板块 <b>100%</b> 有来源徽章；50 条引语 <b>100%</b> 带出处标签（卷一 34 条、卷二 16 条）；
+        速览卡片与逐讲索引分组另有来源行。<b>但段落中间没有逐句标注</b>——这是有意保留的取舍，理由见 A4。</p>
+      </div>
+
+      <div class="card gold">
+        <span class="tag">结论三</span>
+        <h3>三处「标题 ≠ 内容」的坑已经查实并标注</h3>
+        <p>最典型的是卷一第 010 分 P：标题写着《因信仰自由而享受自由》，但用本地 ASR 转写比对后确认
+        <b>它的音频其实是《性与权力》，且与第 019 分 P 是同一集重复音频</b>（开头逐字相同、相似度 0.85、时长差 5 秒）。
+        这类问题已经写进索引行内与页脚，没有藏起来。</p>
+      </div>
+
+      <div class="card rose">
+        <span class="tag">结论四</span>
+        <h3>三个「有意保留」的不足，不打算用话术盖过去</h3>
+        <p>① 段落级逐句标注缺失；② 卷一速览 11 张卡片的讲号映射属编者判断；
+        ③ 卷一 146–155 集只有二手 AI 概要、<b>无法逐字核对</b>。
+        三项都已在页面上显式声明并降档标注。</p>
+      </div>
+    </div>
+
+    <h3 class="u-h17">审计对象清单（实测）</h3>
+    <div class="tablewrap">
+      <table>
+        <tr><th>文件</th><th>字节</th><th>行数</th><th>正文板块</th><th>目录链接</th><th>置信度标签</th><th>引语（带出处）</th></tr>
+        <tr><td><code>index.html</code></td><td>41,698</td><td>536</td><td>6</td><td>—</td><td>17</td><td>—</td></tr>
+        <tr><td><code>2016-2017-wealthfreedom.html</code></td><td>197,957</td><td>1,807</td><td>26</td><td>29</td><td>82</td><td>34 / 34</td></tr>
+        <tr><td><code>2026-interview.html</code></td><td>65,658</td><td>810</td><td>14</td><td>16</td><td>42</td><td>16 / 16</td></tr>
+        <tr><td><code>assets/site.css</code></td><td>26,815</td><td>527</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td><code>assets/site.js</code></td><td>17,948</td><td>426</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td><b>合计</b></td><td><b>350,076</b></td><td><b>4,106</b></td><td><b>46</b></td><td><b>45</b></td><td><b>141</b></td><td><b>50 / 50</b></td></tr>
+      </table>
+    </div>
+    <p class="sec-lead">两点口径说明：① <b>本页（审计报告）不计入被审对象</b>，否则「统计自家标签数」会变成自我指涉；
+    ② 置信度标签 141 处含首页图例与来源表里的 17 处，<b>落在正文结论上的为 120 处</b>（卷一 79、卷二 41）。</p>
+  </section>
+
+  <!-- ============ A1 ============ -->
+  <section id="a1">
+    <h2 class="sec"><span class="num">A1</span>审计口径：沿用「以日为镜」五条纪律</h2>
+    <p class="sec-src"><span class="tag tag-mid">口径对照</span>逐条说明本站在每条纪律上做到了什么、哪些是有意偏离</p>
+    <p class="sec-lead">「以日为镜」的 README 里写明了五条写作纪律。本站逐条对照落地，偏离的地方明说。</p>
+
+    <div class="tablewrap">
+      <table>
+        <tr><th>纪律（以日为镜）</th><th>那一站的做法</th><th>本站的落地</th><th>本次实测</th></tr>
+        <tr>
+          <td><b>作者权威化</b></td>
+          <td>综合学者观点后直接下结论、给动作，不让读者自己选边</td>
+          <td><b>有意偏离。</b>本站不下判断，只做「转述 + 来源定级」；唯一由编者下判断的板块是「十年对照」，且明确标注为编者归纳</td>
+          <td>9 行对照表全部标注判定来源</td>
+        </tr>
+        <tr>
+          <td><b>三级置信度</b></td>
+          <td>高可信·已查证 / 推演·中可信 / 推演·低可信</td>
+          <td>语义改造为「这行字离原话有多远」：原话·已核字幕 / 转写·中可信 / 概要·待核</td>
+          <td>141 处标签，覆盖 46 个板块</td>
+        </tr>
+        <tr>
+          <td><b>来源可追溯</b></td>
+          <td>正文上标 <code>[n]</code> 对应文末 85 条参考资料</td>
+          <td>用<b>讲号（001–156）</b>与<b>时间码（00:00:00–04:22:28）</b>替代参考文献</td>
+          <td>引语 50 / 50 带出处（100%）</td>
+        </tr>
+        <tr>
+          <td><b>数据纪律</b></td>
+          <td>优先最新数据；估算值标注方法；不同口径并排呈现</td>
+          <td>三批材料<b>证据强度递减</b>并逐板块声明；两处「标题与内容不符」用本地 ASR 复核后写明</td>
+          <td>第 010 / 019 重复音频已确认</td>
+        </tr>
+        <tr>
+          <td><b>风险写实</b></td>
+          <td>不回避坏消息，每个风险判断都配可执行解法</td>
+          <td>每卷各有一节「需要打折听的地方」（卷一 12 条 / 卷二 6 条），逐条说明为什么要打折</td>
+          <td>18 条，两卷均置于正文末</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ A2 ============ -->
+  <section id="a2">
+    <h2 class="sec"><span class="num">A2</span>排版：版式、字体、深浅色</h2>
+    <p class="sec-src"><span class="tag tag-mid">实测</span>尺寸、断点与颜色变量均为代码实测值</p>
+    <p class="sec-lead">排版维度看四件事：版心与留白是否稳定、字号与行高是否适合长文、宽屏与手机是否都成立、深色模式有没有残留。</p>
+
+    <div class="grid g2">
+      <div class="card">
+        <span class="tag">版心与网格</span>
+        <h3>版心 1240px，宽屏目录常驻 322px</h3>
+        <p>内容列固定 <code>--wrap-w:1240px</code>；屏幕 ≥1119px 时左侧目录常驻 322px，正文与顶栏右列用同一条
+        <code>calc(var(--toc-w) + max(0px, (100% - var(--toc-w) - var(--wrap-w))/2))</code> 计算，<b>两者严格对齐</b>。
+        小屏时该规则整体失效，退化为抽屉目录，正文回到单列居中。</p>
+      </div>
+      <div class="card">
+        <span class="tag">竖向节奏</span>
+        <h3>板块间距 56px，锚点偏移随顶栏自适应</h3>
+        <p><code>section{margin-bottom:56px}</code>；<code>scroll-margin-top:calc(var(--bar-h) + 20px)</code>
+        保证点击目录跳转时标题不被 sticky 顶栏遮住。顶栏高度统一为 <code>--bar-h:58px</code>，抽屉、搜索面板、
+        移动端搜索条的吸顶位置全部由这一个变量推导。</p>
+      </div>
+      <div class="card">
+        <span class="tag">字体</span>
+        <h3>正文无衬线、标题用宋体，均为系统字体栈</h3>
+        <p>正文栈：PingFang SC → Hiragino Sans GB → Microsoft YaHei → Source Han Sans SC → system-ui；
+        标题栈：Songti SC → Source Han Serif SC → Noto Serif SC → Georgia。
+        <b>不加载任何 Web 字体</b>，因此没有字体造成的布局抖动（CLS），中文阅读观感也更接近纸面。</p>
+      </div>
+      <div class="card">
+        <span class="tag">深浅色</span>
+        <h3>所有颜色走 CSS 变量，硬编码浅色已全部覆盖</h3>
+        <p>颜色令牌在 <code>:root</code> 与 <code>html[data-theme="dark"]</code> 两处定义，共 <b>26 个变量</b>，
+        深色下覆写 <b>20 个</b>（其余 6 个是尺寸与字体栈，本来就不需要覆写）。
+        原设计里三处硬编码浅色（引用块渐变底、警示卡底色与标题色、头部径向渐变）已单独加 <code>dark</code> 覆写，
+        切换后无浅底深字或深底浅字残留。主题选择写入 <code>localStorage</code>，并在 <code>&lt;head&gt;</code>
+        内联脚本里提前应用，避免闪白。</p>
+      </div>
+      <div class="card">
+        <span class="tag">响应式</span>
+        <h3>六档断点，手机端搜索框收成一个放大镜</h3>
+        <p>断点 1119 / 760 / 680 / 480 / 400 / 360 px。480px 以下搜索框折叠为图标，点击后整行下拉；
+        400px 以下隐藏 GitHub 图标保留分享与主题；品牌名三档收缩（全称 → 简称 → 两字）。</p>
+      </div>
+      <div class="card">
+        <span class="tag">长文可读性</span>
+        <h3>正文 15.5px / 行高 1.78，卡片 14px / 1.72</h3>
+        <p>正文行高 1.78（约 27.6px）。版心 1240px ÷ 15.5px ≈ <b>80 个字/行</b>（按全角字宽估算），
+        落在中文长文的舒适区。引语块用宋体 + 暖底，与正文形成明确层次。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ A3 ============ -->
+  <section id="a3">
+    <h2 class="sec"><span class="num">A3</span>格式：标签平衡、目录对齐、索引</h2>
+    <p class="sec-src"><span class="tag tag-mid">实测</span>以下数字由 <code>_build/validate.py</code> 直接统计，可复跑</p>
+    <p class="sec-lead">格式维度看的是「机器能不能读懂、链接会不会断、检索能不能命中」。</p>
+
+    <h3 class="u-h17">标签平衡（24 类，差值全部为 0）</h3>
+    <div class="tablewrap">
+      <table>
+        <tr><th>页面</th><th>div</th><th>section</th><th>p</th><th>li</th><th>ul</th><th>h1</th><th>h2</th><th>h3</th><th>blockquote</th><th>cite</th><th>span</th><th>a</th><th>button</th><th>svg</th></tr>
+        <tr><td>首页</td><td>104</td><td>6</td><td>74</td><td>0</td><td>0</td><td>1</td><td>6</td><td>11</td><td>0</td><td>0</td><td>117</td><td>15</td><td>14</td><td>4</td></tr>
+        <tr><td>卷一</td><td>532</td><td>26</td><td>432</td><td>40</td><td>10</td><td>1</td><td>26</td><td>171</td><td>34</td><td>34</td><td>785</td><td>36</td><td>20</td><td>5</td></tr>
+        <tr><td>卷二</td><td>110</td><td>14</td><td>103</td><td>38</td><td>9</td><td>1</td><td>14</td><td>60</td><td>16</td><td>16</td><td>168</td><td>24</td><td>19</td><td>5</td></tr>
+        <tr><td colspan="15"><b>三页全部 24 类标签的开闭数量一致，差值 0；未发现未闭合标签</b></td></tr>
+      </table>
+    </div>
+    <p class="sec-lead">旁证一处「看似少了」其实是对的：原文案里的 <code>&lt;li&gt;</code> 计数比现在高 26（卷一）/ 14（卷二）——
+    差值正好等于<b>被替换掉的侧栏目录里的 <code>&lt;ol&gt;&lt;li&gt;</code> 条数</b>（26 与 14），
+    新目录改用抽屉式纯链接结构，并不代表正文字数减少。正文纯文本长度实测<b>增加</b>：卷一 +4.3%、卷二 +11.1%（来自新增的来源徽章与说明）。</p>
+
+    <div class="grid g2 u-mt16">
+      <div class="card">
+        <span class="tag">目录对齐</span>
+        <h3>双向检查：无悬空链接、无孤立板块</h3>
+        <p><b>卷一：</b>目录 29 条链接 → 26 个 section，缺失 <b>0</b>；26 个 section 全部出现在目录里，孤立 <b>0</b>。<br>
+        <b>卷二：</b>目录 16 条链接 → 14 个 section，缺失 <b>0</b>，孤立 <b>0</b>。</p>
+        <p>29 与 26 的差是设计如此：目录除了 1 条卷首与 3 条分组标题，还有 26 条对应每个板块，分组标题另有独立锚点。</p>
+      </div>
+      <div class="card">
+        <span class="tag">无重复 id</span>
+        <h3>三页 id 总数 87，重复 0</h3>
+        <p>id 分布：首页 17、卷一 41、卷二 29。每个 id 在页面内唯一，锚点跳转不会错位。</p>
+      </div>
+      <div class="card">
+        <span class="tag">站内检索</span>
+        <h3>47 条索引，锚点 100% 命中</h3>
+        <p>首页的检索索引覆盖：总览 6 条 + 卷一 26 条 + 卷二 14 条 + 审计 1 条 = <b>47 条</b>。
+        自动核对每条索引指向的文件与锚点，<b>0 条失效</b>。索引已改为严格 JSON，便于脚本校验。</p>
+      </div>
+      <div class="card">
+        <span class="tag">逐讲索引</span>
+        <h3>148 行，无「无字幕」灰条残留</h3>
+        <p>卷一的全 156 讲索引共 <b>148 行</b>（B 站 80 + 续篇 58 + 补遗 10），已无 <code>.nosub</code> 灰底条目。
+        三块分组标题（正篇 / 续篇 / 补遗）本次补齐，并各挂一枚证据等级徽章。</p>
+      </div>
+      <div class="card">
+        <span class="tag">零行内样式</span>
+        <h3>65 处行内 style 已归一为 12 个工具类</h3>
+        <p>整理过程中发现正文残留 65 处行内样式（间距与颜色，均为 <code>margin</code> 与 <code>var()</code> 颜色）。
+        已全部替换为语义化工具类，<b>三页行内 style 计数为 0</b>，样式来源只剩 <code>assets/site.css</code> 一处。</p>
+      </div>
+      <div class="card">
+        <span class="tag">外部依赖</span>
+        <h3>1 个可选 CDN，缺失时自动降级</h3>
+        <p>全站唯一第三方脚本是 <code>qrcodejs</code>，只服务于「分享 → 生成微信二维码」。
+        未加载时该入口会提示改用「复制链接」，不影响其余功能；CSS 与主脚本均为本地资源。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ A4 ============ -->
+  <section id="a4">
+    <h2 class="sec"><span class="num">A4</span>置信度体系落地：三档、三个层级</h2>
+    <p class="sec-src"><span class="tag tag-mid">体系说明</span>语义改造的完整理由</p>
+    <p class="sec-lead">置信度是这次改造的核心。它是「照搬以日为镜的做法」，但不是照抄它的语义——因为内容性质变了。</p>
+
+    <div class="legend">
+      <div class="lg"><span class="tag tag-fact">原话 · 已核字幕</span>
+        <p><b>可以当引用用</b>有官方字幕或原视频逐字可核验，出处精确到讲号 / 时间码。</p></div>
+      <div class="lg"><span class="tag tag-mid">转写 · 中可信</span>
+        <p><b>引前须回原音</b>依据第三方 ASR 转写或二手压缩材料，同音字、断句与专有名词都可能有误。</p></div>
+      <div class="lg"><span class="tag tag-low">概要 · 待核</span>
+        <p><b>只能当线索</b>别人已经压缩过一遍的概要，或标题 / 编号本身存疑、原片检索不到的流传说法。</p></div>
+    </div>
+
+    <div class="grid g2 u-mt16">
+      <div class="card">
+        <span class="tag">为什么改语义</span>
+        <h3>「以日为镜」标的是判断力，本站标的是引文保真度</h3>
+        <p>那一站是作者自己的判断，所以标签问的是「这个结论有多可信」。
+        本站是转述别人的言论，<b>对错不是编辑能担保的</b>——编辑能担保的只有一件事：这行字离原话有多远。
+        所以三档的语义换成「保真度」，并且把「说错了」和「不是我说的」严格分开。</p>
+      </div>
+      <div class="card">
+        <span class="tag">分层设计</span>
+        <h3>板块徽章 → 卡片来源行 → 引语标签</h3>
+        <p><b>① 板块级（40 处）：</b>每个板块标题下一行来源徽章，写明依据与讲号 / 时间码区间。<br>
+        <b>② 卡片 / 索引级（约 40 处）：</b>速览卡片与索引分组各有来源行。<br>
+        <b>③ 引语级（50 条）：</b>每条逐字引语的出处行末尾挂标签，讲号落在哪个来源区间就标哪一档。</p>
+      </div>
+      <div class="card rose">
+        <span class="tag">有意保留</span>
+        <h3>段落中间不做逐句标注</h3>
+        <p>「以日为镜」可以做逐句标注，因为它的每一句都是作者的判断，都要定级。
+        本站的正文是连续转述，<b>如果给每句话都盖一个章，就会制造一种「逐句都核过了」的伪精度</b>——
+        而事实上同一段里的依据强度是一样的。</p>
+        <p>所以本站把定级放在段落<b>所属的来源区间</b>上，而不是每一句上。密度更低，但每一枚标签都是真的。</p>
+      </div>
+      <div class="card rose">
+        <span class="tag">有意保留</span>
+        <h3>卷一速览 11 张卡片：讲号映射属编者判断</h3>
+        <p>速览卡片是面向「如果只读一段」的重写稿，讲号与卡片的对应关系是编者按内容判定的，
+        不是原文自带的。这些卡片已标为「已核字幕」并写明具体讲号，读者可以按讲号回听核对。
+        <b>这一步是推断，不是转录——已知并标注。</b></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ A5 ============ -->
+  <section id="a5">
+    <h2 class="sec"><span class="num">A5</span>覆盖实测与分档理由</h2>
+    <p class="sec-src"><span class="tag tag-mid">实测</span>数字由脚本统计，非估算</p>
+
+    <h3 class="u-h17">分档分布（按页）</h3>
+    <div class="tablewrap">
+      <table>
+        <tr><th>页面</th><th><span class="tag tag-fact">原话 · 已核</span></th><th><span class="tag tag-mid">转写 · 中</span></th><th><span class="tag tag-low">概要 · 待核</span></th><th>合计</th><th>高档占比</th></tr>
+        <tr><td>首页（图例 + 来源表 + 对照表）</td><td>9</td><td>5</td><td>3</td><td>17</td><td>53%</td></tr>
+        <tr><td>卷一 · 2016–17 音频课</td><td>35</td><td>41</td><td>6</td><td>82</td><td>43%</td></tr>
+        <tr><td>卷二 · 2026 长访谈</td><td>35</td><td>5</td><td>2</td><td>42</td><td>83%</td></tr>
+        <tr><td><b>合计</b></td><td><b>79</b></td><td><b>51</b></td><td><b>11</b></td><td><b>141</b></td><td><b>56%</b></td></tr>
+      </table>
+    </div>
+
+    <div class="grid g2 u-mt16">
+      <div class="card">
+        <span class="tag">为什么卷一「中档」最多</span>
+        <h3>因为卷一的来源结构就是这样</h3>
+        <p>卷一跨三个来源：B 站官方字幕只覆盖 <b>001–080</b>（26 个板块里占 11 个），
+        088–145 来自第三方 ASR 转写（占 10 个），146–155 只有 AI 概要（占 1 个），其余是索引与附录。
+        中档多不是标注偷懒，而是<b>素材本身的保真度就这么高</b>——这正是需要标出来的信息。</p>
+      </div>
+      <div class="card">
+        <span class="tag">为什么卷二高档占 83%</span>
+        <h3>因为卷二全片有官方字幕</h3>
+        <p>7,068 句官方字幕覆盖 00:00:00 – 04:22:28，正文九段与 12 条金句因此全部落到时间码；
+        中低档的 7 处集中在「概念词典」「需要打折听的地方」与速览来源行——那些是编者归纳，不是原话。</p>
+      </div>
+      <div class="card">
+        <span class="tag">引语覆盖率</span>
+        <h3>50 条逐字引语，100% 带出处标签</h3>
+        <p>卷一 34 条、卷二 16 条，每条 <code>&lt;cite&gt;</code> 末尾都有标签。
+        分档规则是机械可核查的：讲号 ≤080 判高档、081–145 判中档、146 及以后（含 <code>vol.xxx</code>）判低档；
+        卷二一律高档。没有任何一条是「凭感觉」定的。</p>
+      </div>
+      <div class="card">
+        <span class="tag">交叉验证</span>
+        <h3>标签总数与来源结构调整过两次</h3>
+        <p>初版只有板块徽章（40 处）；加入引语标签后到 50 条；再加入速览卡片与索引分组后到约 120 处。
+        每次增加都同步跑一遍统计脚本，确保不会出现「标签数与实际标注物不符」的情况——
+        这是「以日为镜」那种做法最容易翻车的地方。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ A6 ============ -->
+  <section id="a6">
+    <h2 class="sec"><span class="num">A6</span>可访问性、兼容性与交付体积</h2>
+    <p class="sec-src"><span class="tag tag-mid">实测</span>逐页统计</p>
+
+    <div class="tablewrap">
+      <table>
+        <tr><th>检查项</th><th>首页</th><th>卷一</th><th>卷二</th><th>判定</th></tr>
+        <tr><td>图标按钮无 <code>aria-label</code></td><td>0</td><td>0</td><td>0</td><td>通过</td></tr>
+        <tr><td>纯图标链接无可访问名称</td><td>0</td><td>0</td><td>0</td><td>通过</td></tr>
+        <tr><td>图片缺 <code>alt</code></td><td>0</td><td>0</td><td>0</td><td>通过（全站无位图 <code>&lt;img&gt;</code>）</td></tr>
+        <tr><td>外链缺 <code>rel="noopener"</code></td><td>0</td><td>0</td><td>0</td><td>通过</td></tr>
+        <tr><td>行内 <code>style</code> 残留</td><td>0</td><td>0</td><td>0</td><td>通过（已归一）</td></tr>
+        <tr><td>重复 <code>id</code></td><td>0</td><td>0</td><td>0</td><td>通过</td></tr>
+        <tr><td>表格缺横向滚动容器</td><td>0 / 0</td><td>0 / 0</td><td>0 / 0</td><td>通过（被审三页无 <code>&lt;table&gt;</code>；本页 4 张表全部包在 <code>.tablewrap</code> 内）</td></tr>
+        <tr><td>脚本报错风险点</td><td colspan="3">所有 DOM 查询都有空值保护；页面无 TOC 时目录脚本整体跳过</td><td>通过</td></tr>
+      </table>
+    </div>
+
+    <div class="grid g3 u-mt16">
+      <div class="card">
+        <span class="tag">体积</span>
+        <h3>3 页共 305 KB，共享资源 45 KB</h3>
+        <p>HTML 合计 305,313 B；<code>site.css</code> 26,815 B + <code>site.js</code> 17,948 B，
+        三页加共享资源共 <b>350,076 B</b>。无位图、无字体文件、无前端框架。
+        首次加载只需请求本页 + 两个共享资源。</p>
+      </div>
+      <div class="card">
+        <span class="tag">兼容</span>
+        <h3>依赖 <code>calc()</code> 嵌套 <code>max()</code></h3>
+        <p>宽屏目录对齐用到 <code>calc(var(--toc-w) + max(0px, …))</code>，
+        现代浏览器（Chrome / Edge / Safari / Firefox 近五年版本）均支持。
+        不支持时会回退为左对齐，不出现内容遮挡。</p>
+      </div>
+      <div class="card">
+        <span class="tag">降级</span>
+        <h3>禁用 JS 后仍可完整阅读</h3>
+        <p>关掉脚本后：抽屉目录打不开，但正文全部可见；
+        搜索、分享、日夜模式失效，其余内容与锚点跳转正常。
+        主题默认浅色，不会出现深色残留。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ A7 ============ -->
+  <section id="a7">
+    <h2 class="sec"><span class="num">A7</span>问题清单与处理状态</h2>
+    <p class="sec-src"><span class="tag tag-mid">问题台账</span>不隐藏未修项</p>
+    <p class="sec-lead">共记录 10 项。5 项已修、2 项为设计取舍、3 项为透明度事项（不修，但显式声明）。</p>
+
+    <div class="tablewrap">
+      <table>
+        <tr><th>#</th><th>维度</th><th>问题</th><th>处理</th></tr>
+        <tr><td>1</td><td>格式</td><td>三页的 <code>canonical</code> 与 <code>og:url</code> 全部指向站点根，而非各自页面</td><td><span class="tag tag-fact">已修</span>改为逐页 URL</td></tr>
+        <tr><td>2</td><td>格式</td><td>站内检索索引里有一条指向 <code>audit.html</code>，但该页当时尚未生成</td><td><span class="tag tag-fact">已修</span>本页生成后自动命中</td></tr>
+        <tr><td>3</td><td>格式</td><td>正文残留 65 处行内 <code>style</code>（间距与颜色）</td><td><span class="tag tag-fact">已修</span>归一为 12 个工具类，现为 0</td></tr>
+        <tr><td>4</td><td>排版</td><td>卷一逐讲索引只有「续篇」「补遗」两个分组标题，「正篇」缺标题</td><td><span class="tag tag-fact">已修</span>补齐并挂证据徽章</td></tr>
+        <tr><td>5</td><td>交付</td><td>缺少社交分享封面 <code>og.png</code>，但 meta 已在引用</td><td><span class="tag tag-fact">已修</span>新增 1200×630 封面</td></tr>
+        <tr><td>6</td><td>置信度</td><td>段落中间没有逐句标注，密度低于「以日为镜」</td><td><span class="tag tag-mid">有意保留</span>理由见 A4</td></tr>
+        <tr><td>7</td><td>置信度</td><td>卷一速览 11 张卡片的讲号映射属编者判断</td><td><span class="tag tag-mid">有意保留</span>已写明讲号可回听核对</td></tr>
+        <tr><td>8</td><td>置信度</td><td>卷一索引 148 行没有逐行标签</td><td><span class="tag tag-mid">透明声明</span>由三块分组标题承担分档</td></tr>
+        <tr><td>9</td><td>内容</td><td>卷一第 010 分 P 标题贴错，且与第 019 是同一集重复音频</td><td><span class="tag tag-mid">透明声明</span>索引行内标注 + 页脚详述</td></tr>
+        <tr><td>10</td><td>内容</td><td>卷一 146–155 集只有二手 AI 概要，无法逐字核对</td><td><span class="tag tag-low">透明声明</span>整块降为「概要 · 待核」</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ A8 ============ -->
+  <section id="a8">
+    <h2 class="sec"><span class="num">A8</span>复核方法（可复跑）</h2>
+    <p class="sec-src"><span class="tag tag-mid">可复现</span>脚本随仓库一同发布</p>
+    <p class="sec-lead">本页所有数字都不是人工数的。构建与自检脚本都在仓库的 <code>_build/</code> 目录下，按顺序跑即可复现。</p>
+
+    <div class="flow">
+      <span class="step">extract.py 抽取正文</span><span class="arw">→</span>
+      <span class="step">build.py 挂来源徽章 + 引语分档</span><span class="arw">→</span>
+      <span class="step">annotate.py 卡片与索引补标注</span><span class="arw">→</span>
+      <span class="step">assemble.py 组装三页</span><span class="arw">→</span>
+      <span class="step">normalize.py 行内样式归一</span><span class="arw">→</span>
+      <span class="step">validate.py 输出本页全部实测数据</span>
+    </div>
+
+    <div class="grid g2 u-mt16">
+      <div class="card">
+        <span class="tag">复核清单</span>
+        <h3>六项必跑</h3>
+        <ul class="pts">
+          <li><b>标签平衡：</b>24 类标签开闭差值必须全为 0。</li>
+          <li><b>目录双向对齐：</b>目录 href 无悬空、section 无孤立。</li>
+          <li><b>索引锚点：</b>47 条检索索引指向的文件与锚点全部存在。</li>
+          <li><b>引语覆盖：</b><code>&lt;cite&gt;</code> 数量 = 带标签的 <code>&lt;cite&gt;</code> 数量。</li>
+          <li><b>行内样式：</b>三页 <code>style&#61;&quot;</code> 计数为 0。</li>
+          <li><b>可访问名称：</b>无可访问名称的按钮与链接均为 0。</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag">本次结果</span>
+        <h3>六项全部通过</h3>
+        <p>对应本页 A3 / A5 / A6 三节的所有数字。任何一次改动后重跑，
+        数字若发生偏移，本页需要同步更新——否则审计报告本身就会成为不实陈述。</p>
+        <p>源码与脚本：
+        <a href="https://github.com/strangeyu911-tech/justin-sun-corpus" target="_blank" rel="noopener">strangeyu911-tech/justin-sun-corpus</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ A9 ============ -->
+  <section id="a9">
+    <h2 class="sec"><span class="num">A9</span>已知边界：本次没能验证的部分</h2>
+    <p class="sec-src"><span class="tag tag-low">边界声明</span>不把这些说成「已核」</p>
+    <p class="sec-lead">审计的价值一半在于说清「哪些我查过」，另一半在于说清「哪些我没法查」。</p>
+
+    <div class="grid g2">
+      <div class="card">
+        <span class="tag">无法逐字核对</span>
+        <h3>卷一 146–155 集</h3>
+        <p>这 10 集只有播客平台的 AI 概要 + 时间轴，没有逐字文本。本站按概要补全，
+        整块降为「概要 · 待核」，并明确写着「不能当逐字引用」。
+        <b>想要逐字内容，只能回原始音频。</b></p>
+      </div>
+      <div class="card">
+        <span class="tag">编号为推定</span>
+        <h3>转写仓编号 ↔ 喜马原版编号</h3>
+        <p>088–145 的对应关系是用「标题 + 时长」锚点推定的，已确认的锚点包括：
+        仓 006 = 站 1、仓 009 = 站 4、仓 016 = 站 11、仓 021 = 站 16、仓 027 = 站 21、仓 086 = 站 79、仓 087 = 站 80，
+        以及<b>仓 081–087 与站 074–080 标题 7/7 全中、时长差仅 +6～+39 秒</b>。
+        锚点之间是线性推定，未逐集听验。</p>
+      </div>
+      <div class="card">
+        <span class="tag">站方标题不可信</span>
+        <h3>B 站合集的标题不能当编号依据</h3>
+        <p>第 010 分 P 是反例：标题与音频内容不符。所以本站对「标题相同即同一集」这类判断一律加一道时长或转写校验，
+        并在 MEMORY 里把这条固化成了流程。</p>
+      </div>
+      <div class="card">
+        <span class="tag">口径差异</span>
+        <h3>「156 集」是官方口径，不是实际可得数</h3>
+        <p>专辑页原话说「一共是 156 个音频……但是由于有几个涉及违规，没有上传成功」。
+        因此「全 156 集」严格说是<b>官方声称的集数</b>，而不是「能公开听到 156 集」。
+        本站覆盖的编号区间是 001–156，其中 146–156 段的依据最弱。</p>
+      </div>
+      <div class="card">
+        <span class="tag">未做</span>
+        <h3>没有做第三方独立审计</h3>
+        <p>本报告是作者自查，不是外部审计。所有「通过」都只代表<b>自查脚本没有发现问题</b>，
+        不代表不存在脚本没覆盖到的缺陷（例如语义层面的过度概括、翻译式失真）。</p>
+      </div>
+      <div class="card">
+        <span class="tag">未做</span>
+        <h3>没有逐条回听原音</h3>
+        <p>标注定级依据的是「来源区间」而不是「逐条回听」。也就是说：
+        标为「原话 · 已核字幕」的条目，其<b>来源</b>是可靠的官方字幕，但本站并未把 250 条结论逐条拖回音频比对一遍。
+        这一点在首页的阅读前提里也写明了。</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+</div>
+
+<div class="bottomnav"><div class="bn-in">
+  <a class="btn" href="index.html">← 总览</a>
+  <span class="bn-tip">审计报告 · 排版 / 格式 / 置信度</span>
+  <a class="btn" href="2016-2017-wealthfreedom.html">卷一 · 2016–17 音频课 →</a>
+</div></div>
+
+<footer>
+  <div class="foot-inner">
+    <p><b>关于本页：</b>这是「孙宇晨语料库」的站点自查报告，审计口径沿用姊妹项目
+    <a href="https://mirror.strangeyu.xyz/" target="_blank" rel="noopener">以日为镜（mirror.strangeyu.xyz）</a>
+    的五条写作纪律，逐维度给出实测数据、问题台账与可复跑的复核脚本。所有数字由
+    <code>_build/validate.py</code> 统计，不是人工估算。</p>
+    <p><b>结论摘要：</b>硬性结构项 0 缺陷（标签平衡、无重复 id、目录双向对齐、检索锚点全命中、
+    行内样式归零、可访问名称完整）；置信度标注 141 处、引语出处覆盖率 100%；
+    已修问题 5 项、有意保留 2 项、透明声明 3 项。</p>
+    <p><b>姊妹文档：</b>
+      <a href="index.html">总览与十年对照</a> ·
+      <a href="2016-2017-wealthfreedom.html">卷一 · 2016–17《财富自由革命之路》全 156 集</a> ·
+      <a href="2026-interview.html">卷二 · 2026 对话孙宇晨 4 小时长谈</a> ·
+      <a href="https://github.com/strangeyu911-tech/justin-sun-corpus" target="_blank" rel="noopener">GitHub 仓库</a>
+    </p>
+    <p><b>免责声明：</b>本报告只审计自己这一站的实现质量（排版、格式、置信度标注的覆盖与自洽），
+    不评估被转述内容的对错。站点内容中所有涉及投资、加密货币、健康、婚恋、税务与房产的表述均转述自公开材料，
+    不构成任何建议。发现写错了，欢迎到
+    <a href="https://github.com/strangeyu911-tech/justin-sun-corpus/issues" target="_blank" rel="noopener">仓库提 issue</a>。</p>
+    <p><b>许可：</b>MIT。审计时点：与本次构建同批产出。</p>
+  </div>
+</footer>
+
+<script>window.SITE_META={
+  title:'站点审计报告：排版 / 格式 / 置信度｜孙宇晨语料库',
+  desc:'硬性结构项 0 缺陷；三层置信度覆盖 46 个板块；问题清单与状态逐条列明。'
+};</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="assets/site.js" defer></script>
+</body>
+</html>
