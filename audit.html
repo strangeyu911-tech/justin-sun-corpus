@@ -29,7 +29,7 @@
     <div class="tb-brand">
       <button class="iconbtn" id="tocbtn" aria-label="打开目录" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       <svg class="logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#0f766e"/><path d="M10 7.6v8.8l7-4.4z" fill="#fbfaf8"/><path d="M5.2 9.6v4.8M7.4 10.8v2.4M18.8 9.6v4.8M16.6 10.8v2.4" stroke="#fbfaf8" stroke-width="1.4" stroke-linecap="round" opacity=".72"/></svg>
-      <span class="brand"><span class="b-full">孙宇晨语料库 · 站点审计报告</span><span class="b-short">语料库 · 审计报告</span><span class="b-xs">审计</span></span>
+      <span class="brand" title="孙宇晨语料库 · 站点审计报告"><span class="b-full">孙宇晨语料库 · 站点审计报告</span><span class="b-short">语料库 · 审计</span><span class="b-xs">审计</span></span>
     </div>
     <div class="tb-main">
       <div class="tb-col">
@@ -184,12 +184,12 @@
     <div class="tablewrap">
       <table>
         <tr><th>文件</th><th>字节</th><th>行数</th><th>正文板块</th><th>目录链接</th><th>置信度标签</th><th>引语（带出处）</th></tr>
-        <tr><td><code>index.html</code></td><td>41,698</td><td>536</td><td>6</td><td>—</td><td>17</td><td>—</td></tr>
-        <tr><td><code>2016-2017-wealthfreedom.html</code></td><td>197,957</td><td>1,807</td><td>26</td><td>29</td><td>82</td><td>34 / 34</td></tr>
-        <tr><td><code>2026-interview.html</code></td><td>65,658</td><td>810</td><td>14</td><td>16</td><td>42</td><td>16 / 16</td></tr>
+        <tr><td><code>index.html</code></td><td>41,761</td><td>536</td><td>6</td><td>—</td><td>17</td><td>—</td></tr>
+        <tr><td><code>2016-2017-wealthfreedom.html</code></td><td>198,094</td><td>1,807</td><td>26</td><td>29</td><td>82</td><td>34 / 34</td></tr>
+        <tr><td><code>2026-interview.html</code></td><td>65,750</td><td>810</td><td>14</td><td>16</td><td>42</td><td>16 / 16</td></tr>
         <tr><td><code>assets/site.css</code></td><td>26,815</td><td>527</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
         <tr><td><code>assets/site.js</code></td><td>17,948</td><td>426</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
-        <tr><td><b>合计</b></td><td><b>350,076</b></td><td><b>4,106</b></td><td><b>46</b></td><td><b>45</b></td><td><b>141</b></td><td><b>50 / 50</b></td></tr>
+        <tr><td><b>合计</b></td><td><b>350,368</b></td><td><b>4,106</b></td><td><b>46</b></td><td><b>45</b></td><td><b>141</b></td><td><b>50 / 50</b></td></tr>
       </table>
     </div>
     <p class="sec-lead">两点口径说明：① <b>本页（审计报告）不计入被审对象</b>，否则「统计自家标签数」会变成自我指涉；
@@ -468,9 +468,9 @@
     <div class="grid g3 u-mt16">
       <div class="card">
         <span class="tag">体积</span>
-        <h3>3 页共 305 KB，共享资源 45 KB</h3>
-        <p>HTML 合计 305,313 B；<code>site.css</code> 26,815 B + <code>site.js</code> 17,948 B，
-        三页加共享资源共 <b>350,076 B</b>。无位图、无字体文件、无前端框架。
+        <h3>3 页共 306 KB，共享资源 45 KB</h3>
+        <p>HTML 合计 305,605 B；<code>site.css</code> 26,815 B + <code>site.js</code> 17,948 B，
+        三页加共享资源共 <b>350,368 B</b>。无位图、无字体文件、无前端框架。
         首次加载只需请求本页 + 两个共享资源。</p>
       </div>
       <div class="card">
@@ -525,7 +525,8 @@
       <span class="step">annotate.py 卡片与索引补标注</span><span class="arw">→</span>
       <span class="step">assemble.py 组装三页</span><span class="arw">→</span>
       <span class="step">normalize.py 行内样式归一</span><span class="arw">→</span>
-      <span class="step">validate.py 输出本页全部实测数据</span>
+      <span class="step">validate.py 输出实测数据</span><span class="arw">→</span>
+      <span class="step">sync_audit.py 回填本页数字</span>
     </div>
 
     <div class="grid g2 u-mt16">
@@ -540,12 +541,19 @@
           <li><b>行内样式：</b>三页 <code>style&#61;&quot;</code> 计数为 0。</li>
           <li><b>可访问名称：</b>无可访问名称的按钮与链接均为 0。</li>
         </ul>
+        <p>以上六项加上资源存在性、本页数字一致性，共八项，
+        由 <code>_build/check.py</code> <b>一条命令跑完</b>并打印 PASS / FAIL；
+        退出码非 0 即表示不可交付。此处不再靠人工目测。</p>
       </div>
       <div class="card">
         <span class="tag">本次结果</span>
         <h3>六项全部通过</h3>
         <p>对应本页 A3 / A5 / A6 三节的所有数字。任何一次改动后重跑，
-        数字若发生偏移，本页需要同步更新——否则审计报告本身就会成为不实陈述。</p>
+        数字若发生偏移，本页必须同步更新——否则审计报告本身就会成为不实陈述。</p>
+        <p>这条纪律已经脚本化：<code>_build/sync_audit.py</code> 从 <code>validate_out.json</code>
+        与产物真实字节数推导本页 A0 表格与 A6 体积卡的每一个数字，
+        且任何一次替换未命中都会直接报错退出。<b>本页数字因此不可能与产物脱节。</b>
+        重构品牌文案时它就抓到过一次偏差（三页字节数变了、表格还停在旧值）。</p>
         <p>源码与脚本：
         <a href="https://github.com/strangeyu911-tech/justin-sun-corpus" target="_blank" rel="noopener">strangeyu911-tech/justin-sun-corpus</a></p>
       </div>

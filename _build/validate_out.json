@@ -1,8 +1,8 @@
 {
  "pages": {
   "index.html": {
-   "size": 41698,
-   "chars": 28384,
+   "size": 41761,
+   "chars": 28421,
    "lines": 536,
    "tags": {
     "div": [
@@ -156,8 +156,8 @@
    "n_tablewrap": 0
   },
   "2016-2017-wealthfreedom.html": {
-   "size": 197957,
-   "chars": 115405,
+   "size": 198094,
+   "chars": 115537,
    "lines": 1807,
    "tags": {
     "div": [
@@ -311,8 +311,8 @@
    "n_tablewrap": 0
   },
   "2026-interview.html": {
-   "size": 65658,
-   "chars": 40726,
+   "size": 65750,
+   "chars": 40815,
    "lines": 810,
    "tags": {
     "div": [
@@ -466,9 +466,9 @@
    "n_tablewrap": 0
   },
   "audit.html": {
-   "size": 44453,
-   "chars": 31783,
-   "lines": 646,
+   "size": 45269,
+   "chars": 32250,
+   "lines": 654,
    "tags": {
     "div": [
      88,
@@ -481,8 +481,8 @@
      0
     ],
     "p": [
-     68,
-     68,
+     70,
+     70,
      0
     ],
     "li": [
@@ -531,8 +531,8 @@
      0
     ],
     "span": [
-     124,
-     124,
+     126,
+     126,
      0
     ],
     "a": [

@@ -2,6 +2,8 @@
 _build/*_main.html
 _build/*_proc.html
 _build/*_foot.html
+# 无头浏览器验收截图（约 1 MB，可再截，不入库）
+_build/shots/
 
 # 系统文件
 Thumbs.db

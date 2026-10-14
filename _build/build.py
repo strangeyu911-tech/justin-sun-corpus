@@ -70,7 +70,7 @@ def topbar(brand_full, brand_short, brand_xs, placeholder, with_toc=True, toc_la
     <div class="tb-brand">
       %(tocbtn)s
       %(logo)s
-      <span class="brand"><span class="b-full">%(full)s</span><span class="b-short">%(short)s</span><span class="b-xs">%(xs)s</span></span>
+      <span class="brand" title="%(full)s"><span class="b-full">%(full)s</span><span class="b-short">%(short)s</span><span class="b-xs">%(xs)s</span></span>
     </div>
     <div class="tb-main">
       <div class="tb-col">
