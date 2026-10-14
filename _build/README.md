@@ -43,6 +43,7 @@ python gen_og.py      # 生成 1200×630 社交分享封面（需 Pillow）
 | `validate.py` | 标签平衡、目录双向对齐、检索锚点、引语覆盖、行内样式、可访问名称 + 资源存在性 |
 | `sync_audit.py` | 把 `validate_out.json` 与产物真实字节数回填进 `audit.html`（A0 表格 + A6 体积卡） |
 | `check.py` | 调用上面两个脚本并判定结论，打印 PASS/FAIL 清单（退出码 0 = 可交付） |
+| `accept.mjs` | Playwright 驱动本机 Edge 跑 17 条**真交互**断言（搜索/分享/日夜/抽屉目录/进度条） |
 | `gen_og.py` | 纯 Pillow 绘制分享封面 |
 
 ## 自检六项（`validate.py`）
@@ -78,3 +79,28 @@ python sync_audit.py --check   # 只报告差异，退出码 1 表示有差异�
 
 任何一次改动后重跑 `validate.py` → `sync_audit.py`，三页自检通过、`--check` 无差异，
 才算交付闭环。
+
+## 交互验收（`accept.mjs`）
+
+`check.py` 属于静态检查：它能证明标签配平、锚点存在、没有行内样式，
+但**证明不了顶部栏那几样 JS 交互真的能用**——搜索会不会高亮、分享菜单会不会弹出来、
+日夜模式会不会切换并记住、抽屉目录能不能开。这些恰恰是照搬「以日为镜」的核心交付，
+只看静态截图看不出来。
+
+所以另有一份真交互验收：Playwright 驱动本机已装的 Edge（不下载 Chromium）：
+
+```bash
+PLAYWRIGHT_HOME=<node_modules 路径> node _build/accept.mjs
+```
+
+它会自己起一个本地静态服务（默认 8777）、跑完 17 条断言、出证据截图到 `_build/shots/`，
+最后自己关掉服务和浏览器。也可以直接指向线上：`node _build/accept.mjs https://strangeyu911-tech.github.io/justin-sun-corpus/`
+
+覆盖：日夜模式切换 + `localStorage` 持久化、全站检索命中数与面板、无命中时的引导文案、
+分享菜单 12 渠道与 `aria-expanded`、Esc 收起、正文高亮计数一致、高亮不越界到顶部栏与目录、
+Esc 清除高亮、目录篇目展开收起、滚动更新进度条与当前项联动、窄屏汉堡与抽屉遮罩、
+四页无脚本报错。
+
+**这份验收抓到过一个真问题**：断言「高亮处数 == 正文 `<mark>` 数」时报 46 对 43。
+查下来是断言写窄了——`site.js` 的高亮有意只排除顶部栏/目录/搜索面板/分享菜单/底部导航，
+hero 与页脚是算在内的。计数本来是对的，改的是断言。这正是静态检查发现不了的那类问题。

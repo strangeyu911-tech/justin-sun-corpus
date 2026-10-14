@@ -526,7 +526,9 @@
       <span class="step">assemble.py 组装三页</span><span class="arw">→</span>
       <span class="step">normalize.py 行内样式归一</span><span class="arw">→</span>
       <span class="step">validate.py 输出实测数据</span><span class="arw">→</span>
-      <span class="step">sync_audit.py 回填本页数字</span>
+      <span class="step">sync_audit.py 回填本页数字</span><span class="arw">→</span>
+      <span class="step">check.py 判定八项结论</span><span class="arw">→</span>
+      <span class="step">accept.mjs 真交互验收</span>
     </div>
 
     <div class="grid g2 u-mt16">
@@ -556,6 +558,21 @@
         重构品牌文案时它就抓到过一次偏差（三页字节数变了、表格还停在旧值）。</p>
         <p>源码与脚本：
         <a href="https://github.com/strangeyu911-tech/justin-sun-corpus" target="_blank" rel="noopener">strangeyu911-tech/justin-sun-corpus</a></p>
+      </div>
+      <div class="card">
+        <span class="tag">交互验收</span>
+        <h3>静态检查够不到的那一层：17 / 17 通过</h3>
+        <p>标签配平、锚点存在、无行内样式——这些证明不了顶部栏那几样 JS 交互真的能用：
+        搜索会不会高亮、分享菜单会不会弹、日夜模式会不会切换并记住、抽屉目录能不能开。
+        而顶部栏正是本站照搬「以日为镜」的核心交付，只截图看不出来。</p>
+        <p>所以另有一份真交互验收：<code>_build/accept.mjs</code> 用 Playwright 驱动真实
+        Edge 浏览器跑 17 条断言，覆盖日夜模式切换 + <code>localStorage</code> 持久化、
+        检索命中数与无命中引导、分享菜单 12 渠道与 <code>aria-expanded</code>、
+        高亮计数一致性、高亮不越界到顶部栏、滚动联动与进度条、窄屏抽屉遮罩、四页零脚本报错。
+        <b>当前 17 / 17。</b></p>
+        <p>它抓到过一个静态检查发现不了的问题：断言「高亮计数 == 正文 <code>&lt;mark&gt;</code> 数」
+        时报 46 对 43 —— 查下来是断言写窄了，脚本有意把 hero 与页脚也算作正文范围。
+        修的是断言，不是脚本。</p>
       </div>
     </div>
   </section>
