@@ -208,6 +208,8 @@ ${shell}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>window.SITE_META={"title":"可以拿走的部分：孙割观点使用说明 · 孙割这十年","desc":"136 条断言的可信度分级 + 10 条可迁移方法论。"};</script>
 <script src="assets/site.js" defer></script>
+<script>window.QQ_CONFIG={siteName:'孙割这十年',wxNote:'孙割这十年'};</script>
+<script src="qqgroup.js" defer></script>
 </body>
 </html>
 `;

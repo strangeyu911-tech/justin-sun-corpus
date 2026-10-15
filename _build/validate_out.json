@@ -1,13 +1,13 @@
 {
  "pages": {
   "index.html": {
-   "size": 41761,
-   "chars": 28421,
-   "lines": 536,
+   "size": 48582,
+   "chars": 32988,
+   "lines": 612,
    "tags": {
     "div": [
-     104,
-     104,
+     115,
+     115,
      0
     ],
     "section": [
@@ -16,8 +16,8 @@
      0
     ],
     "p": [
-     74,
-     74,
+     90,
+     90,
      0
     ],
     "li": [
@@ -46,13 +46,13 @@
      0
     ],
     "h3": [
-     11,
-     11,
+     14,
+     14,
      0
     ],
     "h4": [
-     6,
-     6,
+     8,
+     8,
      0
     ],
     "blockquote": [
@@ -66,13 +66,13 @@
      0
     ],
     "span": [
-     117,
-     117,
+     140,
+     140,
      0
     ],
     "a": [
-     15,
-     15,
+     42,
+     42,
      0
     ],
     "table": [
@@ -96,8 +96,8 @@
      0
     ],
     "nav": [
-     0,
-     0,
+     1,
+     1,
      0
     ],
     "main": [
@@ -116,13 +116,13 @@
      0
     ],
     "button": [
-     14,
-     14,
+     17,
+     17,
      0
     ],
     "svg": [
-     4,
-     4,
+     5,
+     5,
      0
     ],
     "mark": [
@@ -131,10 +131,10 @@
      0
     ]
    },
-   "ids": 17,
+   "ids": 22,
    "dup_ids": [],
    "sections": 6,
-   "toc_links": 0,
+   "toc_links": 12,
    "n_tag_fact": 9,
    "n_tag_mid": 5,
    "n_tag_low": 3,
@@ -148,21 +148,21 @@
    "n_a_noname": 0,
    "n_img": 0,
    "n_img_alt": 0,
-   "n_btn": 14,
-   "n_btn_aria": 2,
+   "n_btn": 17,
+   "n_btn_aria": 3,
    "n_a_ext": 3,
    "n_a_ext_rel": 3,
    "n_table": 0,
    "n_tablewrap": 0
   },
   "2016-2017-wealthfreedom.html": {
-   "size": 198094,
-   "chars": 115537,
-   "lines": 1807,
+   "size": 198685,
+   "chars": 116089,
+   "lines": 1812,
    "tags": {
     "div": [
-     532,
-     532,
+     540,
+     540,
      0
     ],
     "section": [
@@ -221,13 +221,13 @@
      0
     ],
     "span": [
-     785,
-     785,
+     790,
+     790,
      0
     ],
     "a": [
-     36,
-     36,
+     37,
+     37,
      0
     ],
     "table": [
@@ -311,13 +311,13 @@
    "n_tablewrap": 0
   },
   "2026-interview.html": {
-   "size": 65750,
-   "chars": 40815,
-   "lines": 810,
+   "size": 66174,
+   "chars": 41194,
+   "lines": 816,
    "tags": {
     "div": [
-     110,
-     110,
+     115,
+     115,
      0
     ],
     "section": [
@@ -376,13 +376,13 @@
      0
     ],
     "span": [
-     168,
-     168,
+     170,
+     170,
      0
     ],
     "a": [
-     24,
-     24,
+     25,
+     25,
      0
     ],
     "table": [
@@ -466,8 +466,8 @@
    "n_tablewrap": 0
   },
   "audit.html": {
-   "size": 46727,
-   "chars": 33090,
+   "size": 46703,
+   "chars": 33082,
    "lines": 671,
    "tags": {
     "div": [
@@ -636,22 +636,42 @@
   }
  },
  "index": {
-  "total": 47,
+  "total": 50,
   "by_vol": {
    "总览": 6,
    "审计": 1,
+   "卷三": 1,
+   "提炼": 1,
+   "推演": 1,
    "卷一": 26,
    "卷二": 14
   },
-  "bad": []
+  "bad": [
+   [
+    "volume3.html",
+    "文件不存在"
+   ],
+   [
+    "takeaway.html",
+    "文件不存在"
+   ],
+   [
+    "outlook.html",
+    "文件不存在"
+   ]
+  ]
  },
  "assets": {
   "assets/site.css": true,
   "2016-2017-wealthfreedom.html": true,
   "2026-interview.html": true,
+  "volume3.html": true,
+  "takeaway.html": true,
+  "outlook.html": true,
+  "audit.html": true,
   "2016-2017-wealthfreedom.html#s25": true,
   "2026-interview.html#s12": true,
-  "audit.html": true,
+  "volume3.html#s5": true,
   "assets/site.js": true,
   "index.html": true
  }

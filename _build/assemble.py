@@ -116,6 +116,8 @@ for key, cfg in PAGES.items():
         '\n<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>\n',
         '<script>window.SITE_META=%s;</script>\n' % meta,
         '<script src="assets/site.js" defer></script>\n',
+        '<script>window.QQ_CONFIG={siteName:\'孙割这十年\',wxNote:\'孙割这十年\'};</script>\n',
+        '<script src="qqgroup.js" defer></script>\n',
         '</body>\n</html>\n',
     ]
     html = ''.join(parts)
