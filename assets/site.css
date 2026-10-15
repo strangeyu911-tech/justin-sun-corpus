@@ -80,6 +80,10 @@ mark{background:rgba(180,83,9,.22);color:inherit;border-radius:3px;padding:0 1px
 .topbar{position:sticky;top:0;background:var(--card);border-bottom:1px solid var(--line);z-index:900}
 .topbar .in{display:flex;align-items:stretch;height:var(--bar-h);max-width:100%;margin:0 auto}
 .tb-brand{flex:0 0 auto;display:flex;align-items:center;gap:9px;padding:0 12px 0 16px;min-width:0}
+/* 品牌区可点击（模仿 HowToLiveBetter）：点 logo / 站名跳回首页 */
+a.tb-brand{text-decoration:none;color:var(--ink);border-bottom-color:transparent}
+a.tb-brand:hover{background:var(--teal-soft)}
+html[data-theme="dark"] a.tb-brand{color:var(--ink)}
 .tb-brand .logo{flex:0 0 auto;width:28px;height:28px;border-radius:7px}
 .tb-brand .brand{font-weight:700;letter-spacing:.3px;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
 .brand .b-short{display:none}
