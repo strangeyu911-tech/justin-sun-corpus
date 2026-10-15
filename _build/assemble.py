@@ -109,9 +109,7 @@ for key, cfg in PAGES.items():
         toc,
         '\n' + hero + '\n',
         '<div class="shell">\n<main>\n', main, '\n</main>\n</div>\n',
-        '<div class="bottomnav"><div class="bn-in">\n  ', cfg['prev'][0],
-        '\n  <span class="bn-tip">', cfg['prev'][2], '</span>\n  ', cfg['prev'][1],
-        '\n</div></div>\n',
+        '<div class="wrap"><div id="qq-entry"></div></div>\n',
         """<section class="xsec">
   <div class="wrap">
     <h2>同一位作者的其他站点</h2>
@@ -131,6 +129,9 @@ for key, cfg in PAGES.items():
   </div>
 </section>
 """,
+        '<div class="bottomnav"><div class="bn-in">\n  ', cfg['prev'][0],
+        '\n  <span class="bn-tip">', cfg['prev'][2], '</span>\n  ', cfg['prev'][1],
+        '\n</div></div>\n',
         foot_of(key, cfg['foot_intro'], ntag, ncite),
         '\n<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>\n',
         '<script>window.SITE_META=%s;</script>\n' % meta,

@@ -267,11 +267,7 @@ ${shell}
 
 </main>
 </div>
-<div class="bottomnav"><div class="bn-in">
-  <a class="btn" href="takeaway.html">← 可以拿走的部分</a>
-  <span class="bn-tip">未来推演 · 编者判断</span>
-  <a class="btn" href="index.html">总览 →</a>
-</div></div>
+<div class="wrap"><div id="qq-entry"></div></div>
 <section class="xsec">
   <div class="wrap">
     <h2>同一位作者的其他站点</h2>
@@ -290,6 +286,11 @@ ${shell}
     </div>
   </div>
 </section>
+<div class="bottomnav"><div class="bn-in">
+  <a class="btn" href="takeaway.html">← 可以拿走的部分</a>
+  <span class="bn-tip">未来推演 · 编者判断</span>
+  <a class="btn" href="index.html">总览 →</a>
+</div></div>
 
 <footer>
   <div class="foot-inner">
