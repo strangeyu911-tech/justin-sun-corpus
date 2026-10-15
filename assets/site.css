@@ -470,6 +470,8 @@ html[data-theme="dark"] .tag-low{background:rgba(208,138,122,.18)}
 .cmp-col.dim .cmp-year{color:var(--faint)}
 .cmp-verdict{margin:12px 0 0;font-size:13.8px;color:var(--ink-2);line-height:1.72;padding-top:11px;border-top:1px dashed var(--line)}
 .cmp-verdict b{color:var(--ink)}
+.cmp-vol3{margin:9px 0 0;font-size:12px;color:var(--muted)}
+.cmp-vol3 a{font-weight:600}
 
 /* 来源清单 */
 .src-list{display:grid;gap:10px;margin:14px 0 0}
