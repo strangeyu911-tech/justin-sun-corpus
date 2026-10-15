@@ -530,7 +530,14 @@ html[data-theme="dark"] .tag-low{background:rgba(208,138,122,.18)}
   #tocbtn{display:none}
   .tb-brand{width:var(--toc-w);flex:none}
   .tb-brand .brand{font-size:14px}
-  .shell,.hero-inner,.foot-inner,#searchpanel .sp-in,.bottomnav .bn-in{
+  /* 顶层容器（<body> 直接子级）左移，避让固定定位的抽屉目录。
+     ⚠️ 除了 .shell / .hero-inner 这些，还必须覆盖「直接挂在 <body> 下、不在 .shell 里」
+     的 .wrap（QQ 群卡片区、.xsec 引流区就是这种）—— 漏掉它们就会按整页宽度居中，
+     一头扎进左侧目录底下：卡片被压掉半截、二维码只剩一条竖缝。
+     以后新增顶层区块，要么放进 .shell，要么也挂到这条规则上。 */
+  .shell,.hero-inner,.foot-inner,#searchpanel .sp-in,.bottomnav .bn-in,
+  body:not(.no-toc) > .wrap,
+  body:not(.no-toc) > .xsec > .wrap{
     margin-left:calc(var(--toc-w) + max(0px, (100% - var(--toc-w) - var(--wrap-w)) / 2));
     margin-right:auto;
   }
