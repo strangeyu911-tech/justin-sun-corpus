@@ -272,6 +272,25 @@ ${shell}
   <span class="bn-tip">未来推演 · 编者判断</span>
   <a class="btn" href="index.html">总览 →</a>
 </div></div>
+<section class="xsec">
+  <div class="wrap">
+    <h2>同一位作者的其他站点</h2>
+    <p class="xsec-lead">下面这两处与本页同出一手，但体裁、口径完全不同 —— 列在这里，供你自己判断。</p>
+    <div class="xgrid">
+      <a class="xcard" href="https://mirror.strangeyu.xyz/" target="_blank" rel="noopener">
+        <b>以日为镜：衰退时代普通人生存指南</b>
+        <span>以日本「失去三十年」为镜，综合 20 余位中日与国际学者的观点与 2026 年最新数据，直接给出结论、置信度与分人群行动。</span>
+        <i>去看看 →</i>
+      </a>
+      <a class="xcard" href="https://htlb.strangeyu.xyz/" target="_blank" rel="noopener">
+        <b>《高性价比人生指南》衍生站 · 聚合索引</b>
+        <span>另一个开源项目散在墙内各处的 18 个衍生站、加上维护者自己的几个站点聚在一页，逐个核实谁同步到了哪一版。</span>
+        <i>去看看 →</i>
+      </a>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="foot-inner">
     <p><b>本页：</b>编者的情景式推演（6 主题 × 基准/变体 + 证伪条件），输入为卷三核对留下的公开事实。本页与孙宇晨的观点严格分开：他只作为坐标出现，且只引用被核对验证过方向的部分。</p>
@@ -288,7 +307,7 @@ ${shell}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>window.SITE_META={"title":"未来推演：从已核对的事实往下看 · 孙割这十年","desc":"情景式推演：弱断言、多情景、每个推演都给证伪条件。"};</script>
 <script src="assets/site.js" defer></script>
-<script>window.QQ_CONFIG={siteName:'孙割这十年',wxNote:'孙割这十年'};</script>
+<script>window.QQ_CONFIG={wxNote:'孙割这十年'};</script>
 <script src="qqgroup.js" defer></script>
 </body>
 </html>

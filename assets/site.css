@@ -230,6 +230,18 @@ html[data-theme="dark"] .switch .knob{left:26px}
 
 /* ---------- 6. 内容：版式与组件（沿用原总结页） ---------- */
 .wrap{max-width:var(--wrap-w);margin:0 auto;padding:0 24px}
+/* 「同一位作者的其他站点」——文末引流卡。刻意不用缩略图：本站整体无位图，
+   加图既破坏调性也增加体积；纯文字卡片反而更像这个站自己长出来的。
+   （样式与 mirror-guide 那份保持一致，改一处记得同步另一处。） */
+.xsec{margin:44px 0 10px}
+.xsec h2{font-size:19px;margin:0 0 6px;color:var(--ink)}
+.xsec-lead{color:var(--muted);font-size:14px;margin:0 0 16px;line-height:1.7}
+.xgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:14px}
+.xcard{display:block;border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;background:var(--card);text-decoration:none;transition:border-color .15s}
+.xcard:hover{border-color:var(--teal);background:var(--card)}
+.xcard b{display:block;font-size:15px;font-weight:600;line-height:1.5;color:var(--teal)}
+.xcard span{display:block;font-size:13.5px;color:var(--ink-2);line-height:1.7;margin-top:7px}
+.xcard i{display:block;font-style:normal;font-size:13.5px;color:var(--teal);margin-top:11px}
 .shell{max-width:var(--wrap-w);margin:0 auto;padding:0 24px}
 main{padding:40px 0 96px;min-width:0}
 section{margin:0 0 56px;scroll-margin-top:calc(var(--bar-h) + 20px)}

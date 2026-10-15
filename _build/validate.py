@@ -3,6 +3,9 @@
 import io, os, re, json, collections
 
 ROOT = r"D:\workbuddy\Data\Agent-Reach\outputs\sunyuchen-site"
+# ⚠️ PAGES 是「格式检查范围」，**不是**站点页面清单：后来的卷三 / 提炼 / 推演三页
+# 有意没纳进来（它们的生成器不走 normalize.py，行内 style 没归一）。
+# 要判断"某页是否存在"请直接 os.path.exists，别拿这个列表当白名单用。
 PAGES = ["index.html", "2016-2017-wealthfreedom.html", "2026-interview.html", "audit.html"]
 EXIST = [p for p in PAGES if os.path.exists(os.path.join(ROOT, p))]
 
@@ -101,11 +104,19 @@ if os.path.exists(ip):
         bad = []
         for it in arr:
             f, _, a = it['u'].partition('#')
-            if f not in EXIST:
+            tf = os.path.join(ROOT, f)
+            if not os.path.exists(tf):
                 bad.append((it['u'], '文件不存在'))
                 continue
-            if a and a not in ids.get(f, set()):
-                bad.append((it['u'], '锚点不存在'))
+            if a:
+                # 直接读该页的 id 集合，不查 PAGES —— 它不含卷三/提炼/推演三页，
+                # 拿它当页面清单会把这三个真实存在的文件误判成「文件不存在」。
+                page_ids = ids.get(f)
+                if page_ids is None:
+                    page_ids = set(re.findall(r'\bid="([^"]+)"', io.open(tf, encoding='utf-8').read()))
+                    ids[f] = page_ids
+                if a not in page_ids:
+                    bad.append((it['u'], '锚点不存在'))
         cnt = collections.Counter(it['v'] for it in arr)
         idx_report = dict(total=len(arr), by_vol=dict(cnt), bad=bad)
 

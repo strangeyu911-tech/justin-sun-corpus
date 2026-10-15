@@ -646,20 +646,7 @@
    "卷一": 26,
    "卷二": 14
   },
-  "bad": [
-   [
-    "volume3.html",
-    "文件不存在"
-   ],
-   [
-    "takeaway.html",
-    "文件不存在"
-   ],
-   [
-    "outlook.html",
-    "文件不存在"
-   ]
-  ]
+  "bad": []
  },
  "assets": {
   "assets/site.css": true,
