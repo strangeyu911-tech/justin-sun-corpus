@@ -1,5 +1,5 @@
 /* ============================================================
-   孙宇晨语料库 · 共享样式
+   孙割这十年 · 共享样式
    内容设计系统沿用原有两份总结页；顶部栏 / 抽屉目录 / 置信度三级标签
    的写法直接照搬自 mirror.strangeyu.xyz（以日为镜）。
    ============================================================ */
@@ -160,6 +160,7 @@ html[data-theme="dark"] .switch .knob{left:26px}
 }
 #toc.open{transform:translateX(0)}
 #toc h4{margin:6px 6px 10px;font-size:13px;color:var(--ink-2);letter-spacing:1px;display:flex;align-items:center}
+#toc h4.toc-h4b{margin-top:18px;padding-top:6px}
 #toc h4 .sp{flex:1}
 #toc h4 .toc-tool{border:0;background:transparent;color:var(--ink-2);font-size:11.5px;cursor:pointer;padding:2px 4px;font-family:inherit;border-radius:4px}
 #toc h4 .toc-tool:hover{color:var(--teal);background:var(--line-2)}
@@ -250,9 +251,14 @@ html[data-theme="dark"] header.hero{
 }
 h1.title{
   font-family:var(--serif);font-weight:700;font-size:clamp(28px,4.2vw,46px);
-  line-height:1.24;margin:20px 0 14px;letter-spacing:-.01em;max-width:22ch;
+  line-height:1.24;margin:20px 0 14px;letter-spacing:-.01em;max-width:34ch;
 }
-.subtitle{font-size:16.5px;color:var(--ink-2);max-width:68ch;margin:0 0 26px}
+.subtitle{font-size:16.5px;color:var(--ink-2);max-width:none;margin:0 0 22px}
+/* 主标题下的定位句（小字副标题） */
+.tagline{
+  font-size:17px;color:var(--teal);font-weight:600;letter-spacing:.01em;
+  margin:0 0 18px;max-width:60ch;line-height:1.6;
+}
 .meta{display:flex;flex-wrap:wrap;gap:9px}
 .chip{
   display:inline-flex;align-items:baseline;gap:6px;font-size:13px;color:var(--ink-2);
@@ -264,6 +270,32 @@ h1.title{
   background:var(--gold-soft);padding:11px 16px;border-radius:0 8px 8px 0;max-width:88ch;
 }
 .hero-note b{color:var(--ink-2)}
+
+/* ---------- 6b. hero 两栏：左＝简介＋数据标签，右＝阅读前提卡片 ---------- */
+/* 解决「正文只占左边一半、右侧留白」：把长简介与前提条目并排，两边都有内容 */
+.hero-cols{display:grid;gap:24px 36px;grid-template-columns:minmax(0,1.18fr) minmax(0,1fr);align-items:start;margin-top:4px}
+.hero-main,.hero-side{min-width:0}
+.hero-notes{margin:0}
+.hero-notes .hn-hd{
+  font-size:12px;font-weight:700;color:var(--gold);letter-spacing:.1em;
+  margin:0 0 9px;text-transform:uppercase;
+}
+.hn-item{
+  background:var(--card);border:1px solid var(--line);border-left:3px solid var(--gold);
+  border-radius:0 9px 9px 0;padding:9px 13px;margin:0 0 7px;
+  font-size:13.2px;color:var(--muted);line-height:1.68;
+}
+.hn-item:last-child{margin-bottom:0}
+.hn-item b{color:var(--ink-2)}
+.hn-n{
+  display:inline-flex;align-items:center;justify-content:center;width:17px;height:17px;
+  border-radius:50%;background:var(--gold-soft);color:var(--gold);
+  font-size:11px;font-weight:700;margin-right:6px;vertical-align:1px;flex:0 0 auto;
+}
+@media(max-width:900px){
+  .hero-cols{grid-template-columns:1fr;gap:20px}
+  .tagline{font-size:15.5px}
+}
 
 h2.sec{
   font-family:var(--serif);font-size:23px;line-height:1.35;margin:0 0 6px;font-weight:700;

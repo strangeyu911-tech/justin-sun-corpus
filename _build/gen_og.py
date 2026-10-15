@@ -46,7 +46,7 @@ for dx in (14, 24):
 for dx in (62, 72):
     d.line([x + dx, y + 36, x + dx, y + 50], fill=(251, 250, 248), width=4)
 
-d.text((80, 218), "孙宇晨语料库", font=f(BD, 66), fill=INK)
+d.text((80, 218), "孙割这十年", font=f(BD, 66), fill=INK)
 d.text((82, 312), "2016–17《财富自由革命之路》全 156 集  ×  2026 年 4 小时长访谈",
        font=f(RG, 28), fill=INK2)
 

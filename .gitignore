@@ -5,6 +5,9 @@ _build/*_foot.html
 # 无头浏览器验收截图（约 1 MB，可再截，不入库）
 _build/shots/
 
+# 讨论中的草稿 / 样张（尚未定稿，避免经 Pages 提前公开）
+_draft/
+
 # 系统文件
 Thumbs.db
 desktop.ini

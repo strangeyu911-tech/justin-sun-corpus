@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-把两卷原始总结页重建为「孙宇晨语料库」站点：
+把两卷原始总结页重建为「孙割这十年」站点：
   index.html                      首页（年份分区 + 十年对照 + 全站检索）
   2016-2017-wealthfreedom.html    卷一 · 2016–17 音频课
   2026-interview.html             卷二 · 2026 长访谈
@@ -105,7 +105,7 @@ def head(title, desc, canon, extra_js=""):
 <meta name="description" content="%(desc)s">
 <link rel="canonical" href="%(canon)s">
 <meta property="og:type" content="article">
-<meta property="og:site_name" content="孙宇晨语料库">
+<meta property="og:site_name" content="孙割这十年">
 <meta property="og:url" content="%(canon)s">
 <meta property="og:title" content="%(title)s">
 <meta property="og:description" content="%(desc)s">
