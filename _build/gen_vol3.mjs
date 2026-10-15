@@ -5,6 +5,8 @@ import fs from 'fs';
 const ROOT = 'D:/全局项目库/justin-sun-corpus';
 const rows = fs.readFileSync(ROOT + '/data/claims.jsonl', 'utf8')
   .split('\n').filter(l => l.trim()).map(l => JSON.parse(l));
+const tk = JSON.parse(fs.readFileSync(ROOT + '/data/takeaways.json', 'utf8'));
+const total = tk.groups.reduce((n, g) => n + g.items.length, 0);
 
 const esc = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const done = rows.filter(r => r.status === 'done');
@@ -249,6 +251,7 @@ ${shell}
       </div>
     </div>
     <p class="sec-src" style="margin-top:16px"><span class="tag tag-mid">数据与方法</span>全 ${rows.length} 条断言的结构化数据（含出处、保真度、地域、检验时点、核对结果与来源）见仓库 <code>data/claims.jsonl</code>。任何一条的判定都可以照来源复核。</p>
+    <p class="sec-src" style="margin-top:10px"><span class="tag tag-fact">下一站</span>校准完成之后，这些结果已转成对普通人的<a href="takeaway.html">使用说明 · 可以拿走的部分</a>：${rows.length} 条的分级视图，与 ${total} 条不依赖预测对错也成立的可迁移方法论。</p>
   </section>
 
 </main>

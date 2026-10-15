@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>可以拿走的部分：孙割观点使用说明 · 孙割这十年</title>
+<meta name="description" content="对 136 条断言的可信度分级：哪些经得起核对、哪些只能参考方向、哪些别引用；外加 10 条不依赖预测对错也成立的可迁移方法论。">
+<link rel="canonical" href="https://strangeyu911-tech.github.io/justin-sun-corpus/takeaway.html">
+<meta property="og:site_name" content="孙割这十年">
+<meta property="og:title" content="可以拿走的部分：孙割观点使用说明">
+<meta property="og:description" content="136 条断言的可信度分级 + 10 条可迁移方法论。">
+<meta property="og:image" content="https://strangeyu911-tech.github.io/justin-sun-corpus/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="可以拿走的部分 · 孙割这十年">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230f766e'/%3E%3Cpath d='M10 7.6v8.8l7-4.4z' fill='%23fbfaf8'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/site.css">
+<script>try{var t=localStorage.getItem('sycn-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<style>
+.tk-item{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 18px;margin:0 0 11px;box-shadow:var(--shadow)}
+.tk-item h3{margin:0 0 8px;font-size:17px;font-family:var(--serif)}
+.tk-gist{margin:0 0 8px;font-size:14.2px;color:var(--ink-2);line-height:1.75}
+.tk-limit{margin:0 0 9px;font-size:13px;color:var(--muted);line-height:1.7;background:var(--paper);border-radius:8px;padding:8px 12px}
+.tk-limit b{color:var(--gold)}
+.tk-src{font-size:11.5px;color:var(--faint);line-height:1.6;border-top:1px dashed var(--line);padding-top:8px}
+.tk-grp{margin:26px 0 10px;font-family:var(--serif);font-size:17px;font-weight:700;padding-top:18px;border-top:2px solid var(--line)}
+.tk-grp:first-of-type{border-top:0;padding-top:0;margin-top:4px}
+.gb{display:inline-block;font-size:11.5px;font-weight:600;border-radius:4px;padding:1px 7px;margin-right:7px;vertical-align:1px}
+.g-green{background:var(--teal-soft);color:var(--teal)}
+.g-yellow{background:var(--gold-soft);color:var(--gold)}
+.g-red{background:var(--rose-soft);color:var(--rose)}
+.g-gray{background:var(--line-2);color:var(--muted)}
+table{margin:0 0 12px}
+details{margin:0 0 12px}
+summary{cursor:pointer;font-weight:600;font-size:15px;padding:4px 0}
+summary::marker{color:var(--teal)}
+td code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:11.5px;background:var(--line-2);border-radius:4px;padding:1px 5px;color:var(--ink-2)}
+td.sm{font-size:12px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<div class="topbar">
+  <div class="in">
+    <div class="tb-brand">
+      <button class="iconbtn" id="tocbtn" aria-label="打开目录" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <svg class="logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#0f766e"/><path d="M10 7.6v8.8l7-4.4z" fill="#fbfaf8"/><path d="M5.2 9.6v4.8M7.4 10.8v2.4M18.8 9.6v4.8M16.6 10.8v2.4" stroke="#fbfaf8" stroke-width="1.4" stroke-linecap="round" opacity=".72"/></svg>
+      <span class="brand" title="孙割这十年 · 可以拿走的部分"><span class="b-full">孙割这十年 · 可以拿走的部分</span><span class="b-short">孙割十年 · 拿走</span><span class="b-xs">拿走</span></span>
+    </div>
+    <div class="tb-main">
+      <div class="tb-col">
+        <span class="sp"></span>
+        <div class="searchbox">
+          <span class="sico"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></span>
+          <input id="q" type="text" placeholder="全站检索：板块、讲号、关键词" aria-label="全站检索">
+          <span id="hitcount"></span>
+          <span class="kbd">/</span>
+        </div>
+        <div class="share-wrap">
+          <button class="iconbtn" id="sharebtn" type="button" aria-label="分享本页" aria-haspopup="menu" aria-expanded="false"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></button>
+          <div class="share-menu" id="sharemenu" role="menu" aria-label="分享到">
+  <button class="sm-item" type="button" role="menuitem" data-ch="native"><span class="sm-ic">&#8682;</span><span class="sm-tx">系统分享（手机含微信 / QQ）</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="copy"><span class="sm-ic">&#10697;</span><span class="sm-tx">复制链接<small>粘贴到微信 / QQ 即显示卡片</small></span></button>
+  <div class="sm-sep"></div>
+  <button class="sm-item" type="button" role="menuitem" data-ch="weibo"><span class="sm-ic">微</span><span class="sm-tx">新浪微博</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="qq"><span class="sm-ic">Q</span><span class="sm-tx">QQ 好友 / Qzone</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="facebook"><span class="sm-ic">f</span><span class="sm-tx">Facebook</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="twitter"><span class="sm-ic">X</span><span class="sm-tx">X (Twitter)</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="telegram"><span class="sm-ic">T</span><span class="sm-tx">Telegram</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="reddit"><span class="sm-ic">R</span><span class="sm-tx">Reddit</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="linkedin"><span class="sm-ic">in</span><span class="sm-tx">LinkedIn</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="whatsapp"><span class="sm-ic">W</span><span class="sm-tx">WhatsApp</span></button>
+  <button class="sm-item" type="button" role="menuitem" data-ch="line"><span class="sm-ic">L</span><span class="sm-tx">LINE</span></button>
+  <div class="sm-sep"></div>
+  <button class="sm-item" type="button" role="menuitem" data-ch="qrcode"><span class="sm-ic">&#128247;</span><span class="sm-tx">微信：生成二维码<small>微信扫码打开后再分享</small></span></button>
+  <div class="qr-box" id="qrbox" hidden><div id="qrcode"></div><p class="qr-hint">用微信「扫一扫」打开本页，再点右上角 ··· 分享给好友 / 朋友圈</p></div>
+</div>
+        </div>
+        <a class="iconbtn gh" href="https://github.com/strangeyu911-tech/justin-sun-corpus" target="_blank" rel="noopener" aria-label="GitHub 仓库"><svg width="19" height="19" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.78-.94-1.33-1.13-.27-.16-.65-.52-.01-.53.6-.01 1.03.56 1.18.79.69 1.17 1.77.83 2.21.64.07-.5.27-.83.49-1.02-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82a7.6 7.6 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.28.24.53.71.53 1.44 0 1.04-.01 1.87-.01 2.13 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+        <button class="switch" id="themebtn" role="switch" aria-label="日夜模式切换" aria-checked="false" type="button"><span class="knob"></span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="m-search" id="msearch"><div class="m-search-in" id="msearchin"></div></div>
+<div id="searchpanel"></div>
+<nav id="toc" aria-label="目录">
+<h4>本页<span class="sp"></span><button class="toc-tool" id="toc-expand" type="button">全展开</button><button class="toc-tool" id="toc-collapse" type="button">全收起</button></h4>
+<a href="#s0" class="solo">卷首 · 这页怎么用</a>
+<a href="#s1" class="solo">01　可以拿走的方法论</a>
+<a href="#s2" class="solo">02　全量分级视图</a>
+<a href="#s3" class="solo">03　已证伪的 4 条</a>
+<a href="#s4" class="solo">04　这页不做的事</a>
+<h4 class="toc-h4b">其他页</h4>
+<a href="index.html" class="solo">总览 · 两卷 + 十年对照</a>
+<a href="2016-2017-wealthfreedom.html" class="solo">卷一 · 2016–17 音频课</a>
+<a href="2026-interview.html" class="solo">卷二 · 2026 长访谈</a>
+<a href="volume3.html" class="solo">卷三 · 十年之后回头看</a>
+</nav>
+<div id="toc-mask"></div>
+
+
+<header class="hero">
+  <div class="hero-inner">
+    <span class="kicker">本站提炼 · 对普通人的使用说明</span>
+    <h1 class="title">可以拿走的部分</h1>
+    <p class="tagline">哪些能听、哪些打折、哪些别听——136 条断言的分级，与 10 条可迁移方法论</p>
+    <div class="hero-cols">
+      <div class="hero-main">
+        <p class="subtitle">
+          卷三回答了「他<b>对没对</b>」。这一页把核对结果转成<b>使用说明</b>：对每个普通人来说，
+          这套观点里哪些经得起核对、哪些只能参考方向、哪些别再引用，以及哪些方法论<b>不依赖他的预测对错也成立</b>、可以直接拿走。
+        </p>
+        <div class="meta">
+          <span class="chip"><b>抽样总量</b> 136 条</span>
+          <span class="chip"><b>可迁移方法论</b> 10 条</span>
+          <span class="chip"><b>经得起核对</b> 10</span>
+          <span class="chip"><b>部分说中</b> 36</span>
+          <span class="chip"><b>已证伪</b> 4</span>
+        </div>
+      </div>
+      <aside class="hero-side">
+        <div class="hero-notes">
+          <p class="hn-hd">两句话先说清这页不是什么</p>
+          <div class="hn-item"><span class="hn-n">1</span>它<b>不是人生指南</b>——不告诉你该怎么做，只告诉你他的话该怎么对待。判断始终在你。</div>
+          <div class="hn-item"><span class="hn-n">2</span>它<b>不是背书</b>——标绿只代表「这句被公开数据支持」，不代表「这个人可信」；不同断言的可信度本来就不该捆在一起评。</div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</header>
+<div class="shell">
+<main>
+
+  <section id="s1">
+    <h2 class="sec"><span class="num">01</span>可以拿走的方法论 <span class="sec-time">10 条</span></h2>
+    <p class="sec-lead">以下方法有一个共同点：<b>它们成立与否，不依赖他的任何预测对错</b>——要么有外部研究背书，要么是数学事实，要么是可独立验证的流程。每条都给了适用边界；对应断言的编号可在卷三核对页溯源。</p>
+    <div class="tk-grp">决策与风险</div><div class="tk-item">
+  <h3>拿信息代替做决定</h3>
+  <p class="tk-gist">买房、择业、选城市这类重大决定，先花固定时间看够样本（他的标准是 100 个起步），把「做决定」这个动作换成「拿信息」。他的原话：有了足够的信息之后就不需要做决定。落到买房上是「前三套只用来建立基准，出现明显更优的再出手」。</p>
+  <p class="tk-limit"><b>边界：</b>「100 个」是他的经验值，不是科学常数；卷二已核对过，流传的「37% 最优停止模型」原片并未出现，是外部整理者套用的术语。但「先探图再下注」的思路本身与决策理论一致。</p>
+  <div class="tk-src">对应断言：<a href="volume3.html">V2-s13-b</a> · <a href="volume3.html">V2-s4-c</a> · <a href="volume3.html">V2-s4-b</a>　·　出处：卷二「如果只做三件事」/「先探图再下注」</div>
+</div>
+<div class="tk-item">
+  <h3>攒数据 → 诊断 → 三策取中 → 持续调</h3>
+  <p class="tk-gist">他的 AI 使用流程：① 先积累 2–4 个月的个人数据；② 把现状丢给 AI 做诊断、找方向；③ 同一个问题问 3 个不同的大模型，拿「上中下三策」取中策执行；④ 执行中按反馈持续调整。本质是用模型多样性对冲单一模型的偏差。</p>
+  <p class="tk-limit"><b>边界：</b>「中策」稳健但平庸，不一定最优；重大决定仍需自己的判断兜底。</p>
+  <div class="tk-src">对应断言：<a href="volume3.html">V2-s3-c</a>　·　出处：卷二「零资源起步的三件套」</div>
+</div>
+<div class="tk-item">
+  <h3>复利最怕大额亏损</h3>
+  <p class="tk-gist">亏 50% 需要翻倍才能回本——这是数学事实，不是观点。所以「留在牌桌上」（控制单次风险敞口）优先于「追求单年高收益」；雪道长度比一年的收益率重要。</p>
+  <p class="tk-limit"><b>边界：</b>金融常识层面的方法论，他本人并无异议；但「什么算大额亏损」他没有给可操作的阈值，这一步只能自己定。</p>
+  <div class="tk-src">对应断言：<a href="volume3.html">V1-057-a</a> · <a href="volume3.html">V1-058-a</a>　·　出处：卷一 §06 原始积累三定律</div>
+</div>
+<div class="tk-grp">学习与成长</div><div class="tk-item">
+  <h3>刻意练习四要素</h3>
+  <p class="tk-gist">一万小时不是埋头重复：要有老师、要把技能拆分、要逐个纠正、要复盘。这与 Ericsson 的刻意练习研究一致——有反馈的练习才有效，无反馈的重复只是固化动作。</p>
+  <p class="tk-limit"><b>边界：</b>「一万小时」的具体数字在学界争议很大（领域间差异极大）；但「反馈式练习优于无反馈重复」这个内核是稳的。</p>
+  <div class="tk-src">对应断言：<a href="volume3.html">V1-061-a</a>　·　出处：卷一 §06（一万小时不是一个人的事）</div>
+</div>
+<div class="tk-item">
+  <h3>演化而非设计（MVP）</h3>
+  <p class="tk-gist">产品——以及多数复杂事物——不是一次设计出来的，是先放一个最小可用版本进真实环境、拿反馈、再演化。他举自己的例子：在北大加了二三十个社团，两周过一遍、只留一两家的做法。</p>
+  <p class="tk-limit"><b>边界：</b>适用于试错成本可以拆小的场景；不可逆的大决定不适用这个逻辑。</p>
+  <div class="tk-src">对应断言：<a href="volume3.html">V1-076-a</a>　·　出处：卷一 §10（MVP 与演化）</div>
+</div>
+<div class="tk-item">
+  <h3>人生前半场是采样期</h3>
+  <p class="tk-gist">他拒绝给「人生意义」的标准答案，只给方法：把人生前 50% 当作采集样本的阶段，先体验、先累积信息，之后才有资格下结论。</p>
+  <p class="tk-limit"><b>边界：</b>采样不等于躺平——他强调的是主动体验和记录，不是被动等待。</p>
+  <div class="tk-src">对应断言：<a href="volume3.html">V2-s9-f</a>　·　出处：卷二 §09 财富自由之后</div>
+</div>
+<div class="tk-grp">身体</div><div class="tk-item">
+  <h3>现在就开始练抗阻</h3>
+  <p class="tk-gist">卷二原话称之为全片「唯一既有明确时间窗口、又几乎无争议」的建议：20–40 岁是肌肉投入回报比最高的阶段，抗阻训练越早开始越好。</p>
+  <p class="tk-limit"><b>边界：</b>这条有运动医学共识背书（肌肉量随年龄下降、抗阻训练可显著延缓）；具体训练量因人而异，有伤病史请先咨询专业人士。</p>
+  <div class="tk-src">对应断言：<a href="volume3.html">V2-s13-c</a>　·　出处：卷二附录「如果只做三件事」</div>
+</div>
+<div class="tk-item">
+  <h3>无症状也主动建基线</h3>
+  <p class="tk-gist">「没病不用查」是多数人的默认；他的做法反过来——开始健身前先让 AI 列出该测的指标（血糖、血脂、好坏胆固醇等），在完全无症状时去医院主动检测，先拿到自己的基线数据。</p>
+  <p class="tk-limit"><b>边界：</b>检测项目与频率应遵医嘱，AI 列的清单只是准备材料，不能替代医生判断。</p>
+  <div class="tk-src">对应断言：<a href="volume3.html">V2-s8-a</a>　·　出处：卷二 §08 认知操作系统</div>
+</div>
+<div class="tk-item">
+  <h3>用 AI 记饮食与训练</h3>
+  <p class="tk-gist">两个可以直接照做的用法：① 餐前拍一张餐桌照、吃完再拍一张「残局」，交给 AI 算热量与蛋白质，并按「先吃高蛋白」给进食顺序建议；② 训练时拍视频交给 AI，记录组数、次数、重量，按渐进超载原则排下一次的递增计划。</p>
+  <p class="tk-limit"><b>边界：</b>拍照估热量有误差，当趋势参考而非精确计数；训练计划的加重节奏有伤病史请先问专业人士。</p>
+  <div class="tk-src">对应断言：<a href="volume3.html">V2-s2-a</a> · <a href="volume3.html">V2-s2-b</a>　·　出处：卷二 §02 用 AI 托管一天</div>
+</div>
+<div class="tk-grp">数据主权</div><div class="tk-item">
+  <h3>本地 Markdown + API 解耦</h3>
+  <p class="tk-gist">重要记录落成本地可读的纯文本（Markdown），模型通过 API 调用——数据主权在自己手里，模型随时可换。这是他「AI 个人操作系统」的地基：文件在本地，用 API 读取，换任何模型都不用迁移。</p>
+  <p class="tk-limit"><b>边界：</b>对普通人的可取之处是原则而非实现强度：「别把人生数据锁死在某一家服务里」；是否需要做到他那种全自动程度，看个人需求。</p>
+  <div class="tk-src">对应断言：<a href="volume3.html">V2-s2-c</a> · <a href="volume3.html">V2-s13-a</a>　·　出处：卷二 §02 / 附录</div>
+</div>
+  </section>
+
+  <section id="s2">
+    <h2 class="sec"><span class="num">02</span>全量分级视图 <span class="sec-time">136 条</span></h2>
+    <p class="sec-lead">把卷三的核对结果转成四档对待方式。点开看明细；每条的核对证据与来源都在卷三。</p>
+
+    <p class="sec-src" style="margin-top:4px"><span class="gb g-green">经得起核对</span>当参考用——有公开数据支持。判定与来源见卷三 §04。</p>
+    <details open><summary>说中 · 10 条</summary>
+  <table><thead><tr><th style="width:96px">编号</th><th>断言与对待方式</th><th style="width:170px">出处</th></tr></thead><tbody>
+  <tr><td style="width:96px"><code>V1-030-a</code></td><td><span class="gb g-green">说中</span> 巴菲特赚钱的核心是拿到极低成本的钱（保险浮存金），而不是「眼光准」。</td><td class="sm">第 030 讲（杠杆的本质）</td></tr><tr><td style="width:96px"><code>V1-031-a</code></td><td><span class="gb g-green">说中</span> 杠杆收购加标的预期落空会杀死好公司，如博士伦母公司 VRX 的债务危机。</td><td class="sm">第 031 讲（杠杆的失控）</td></tr><tr><td style="width:96px"><code>V1-S12-a</code></td><td><span class="gb g-green">说中</span> 淘宝出现前中国社零总额约 5 万亿，2015 年增至 30 万亿，电商释放而非打压零售需求</td><td class="sm">第 12 板块 互联网章（088–097）</td></tr><tr><td style="width:96px"><code>V1-099-a</code></td><td><span class="gb g-green">说中</span> 史玉柱第一次失败本质上源于创始人自身原因</td><td class="sm">第 099 讲《巨人的倒下》</td></tr><tr><td style="width:96px"><code>V1-114-a</code></td><td><span class="gb g-green">说中</span> 春雨医生 CEO 张锐 2016 年 10 月 5 日因突发心肌梗塞在北京去世，年仅 44 岁</td><td class="sm">第 114 讲（防御的对象）</td></tr><tr><td style="width:96px"><code>V1-124-a</code></td><td><span class="gb g-green">说中</span> 欧美家族常富十几代，日本大阪金刚组已传 40 代 1400 多年，胡润榜第 100 名企业也有 225 年以上历史</td><td class="sm">第 124 讲《两个天问》</td></tr><tr><td style="width:96px"><code>V1-125-a</code></td><td><span class="gb g-green">说中</span> 2015 年 8 月 23 日河南泌阳货车侧翻 20 吨苹果被村民哄抢，车主最终仅收到 2680 元退赔款</td><td class="sm">第 125 讲《高速哄抢》</td></tr><tr><td style="width:96px"><code>V2-s4-e</code></td><td><span class="gb g-green">说中</span> 他设立「孙宇晨奖」，鼓励把数学证明译成 Lean 形式化语言</td><td class="sm">卷二 · 机会地图与「先探图再下注」 · 00:30:00 附近</td></tr><tr><td style="width:96px"><code>V2-s6-b</code></td><td><span class="gb g-green">说中</span> 他 600 万美元买下的香蕉是概念艺术，本质是流动的数字 IP</td><td class="sm">卷二 · 逐水草而居 · 01:30:37</td></tr><tr><td style="width:96px"><code>V2-s7-c</code></td><td><span class="gb g-green">说中</span> TRON 每天处理数百亿美元交易，年结算量达万亿级</td><td class="sm">卷二 · Crypto：把货币翻译给机器 · 01:40:00 附近</td></tr></tbody></table></details>
+
+    <p class="sec-src"><span class="gb g-yellow">方向可参考，数字别照抄</span>引用前先回卷三核对具体数字与时点。</p>
+    <details><summary>部分说中 · 36 条</summary>
+  <table><thead><tr><th style="width:96px">编号</th><th>断言与对待方式</th><th style="width:170px">出处</th></tr></thead><tbody>
+  <tr><td style="width:96px"><code>V1-006-a</code></td><td><span class="gb g-yellow">部分说中</span> 只要不买房、不买车、不结婚，在北京月薪 1 万就完全花不完。</td><td class="sm">第 006 / 007 / 011 讲（财富自由被重新定义）</td></tr><tr><td style="width:96px"><code>V1-052-a</code></td><td><span class="gb g-yellow">部分说中</span> 特斯拉产能不是问题、需求是刚需、马斯克是营销天才，因此是值得投的机会。</td><td class="sm">第 052 讲《如何赚到自己的 100 万》（特斯拉判断框架）</td></tr><tr><td style="width:96px"><code>V1-046-a</code></td><td><span class="gb g-yellow">部分说中</span> 学区房价格与周边环境严重倒挂，「这是变态环境，迟早崩盘」。</td><td class="sm">第 046 讲《房子户口是子女教育的门槛吗？》</td></tr><tr><td style="width:96px"><code>V1-046-b</code></td><td><span class="gb g-yellow">部分说中</span> 北京租售比约 1:300，租房远比自己买划算。</td><td class="sm">第 046 讲（口述数字，无来源）</td></tr><tr><td style="width:96px"><code>V1-S4-c</code></td><td><span class="gb g-yellow">部分说中</span> 自己养车（奥迪 A6 加司机）一个月不低于 5 万，改用共享出行打折后仅千余元。</td><td class="sm">第 034 – 054 讲（三大革命 · 车：共享经济套利）</td></tr><tr><td style="width:96px"><code>V1-035-a</code></td><td><span class="gb g-yellow">部分说中</span> 婚姻承担的五大功能正被互联网与科技替代，连生育都可被试管婴儿、克隆替代。</td><td class="sm">第 035 讲（婚姻的五大功能正在被摧毁）</td></tr><tr><td style="width:96px"><code>V1-027-a</code></td><td><span class="gb g-yellow">部分说中</span> 全球金融体系与黄金脱钩后，进入温和通胀的常态。</td><td class="sm">第 027 讲《为什么金本位不行》</td></tr><tr><td style="width:96px"><code>V1-058-a</code></td><td><span class="gb g-yellow">部分说中</span> 20% 年化坚持 35 年也只翻约 500 倍，时间长度比收益率更关键。</td><td class="sm">第 058 讲（雪道要足够长）</td></tr><tr><td style="width:96px"><code>V1-S6-b</code></td><td><span class="gb g-yellow">部分说中</span> 「一万小时定律」出自论文《刻意练习在专家技能习得中的作用》，核心是刻意练习。</td><td class="sm">第 056 – 062 讲（定律二 · 一万小时）</td></tr><tr><td style="width:96px"><code>V1-064-a</code></td><td><span class="gb g-yellow">部分说中</span> 新教伦理是工业革命的前提条件。</td><td class="sm">第 064 讲（中国像 16–18 世纪的德国）</td></tr><tr><td style="width:96px"><code>V1-002-a</code></td><td><span class="gb g-yellow">部分说中</span> 中国人在美国炒股不用交税（非美国居民免税）。</td><td class="sm">第 002 / 011 讲（投资实战）</td></tr><tr><td style="width:96px"><code>V1-043-b</code></td><td><span class="gb g-yellow">部分说中</span> 各类「币」「原始股权」「伦敦借壳」一律视为非法集资诈骗。</td><td class="sm">第 043 讲（风险提示）</td></tr><tr><td style="width:96px"><code>V1-077-a</code></td><td><span class="gb g-yellow">部分说中</span> 长期持币三到四年的人从没亏损，短途追涨杀跌的却倾家荡产。</td><td class="sm">第 077 讲《正收益系统叠加》</td></tr><tr><td style="width:96px"><code>V1-078-a</code></td><td><span class="gb g-yellow">部分说中</span> 包办式组织提供的稳定约每 10 年一个周期就被破坏一次，比如国企减员 30%。</td><td class="sm">第 078 讲（稳定就是最大的不稳定）</td></tr><tr><td style="width:96px"><code>V1-093-a</code></td><td><span class="gb g-yellow">部分说中</span> 互联网的好日子只剩五到十年，此后管制与审批在大趋势上还会加强</td><td class="sm">第 093 讲《现在进入还来得及么》</td></tr><tr><td style="width:96px"><code>V1-092-a</code></td><td><span class="gb g-yellow">部分说中</span> 西方动保、环保、女权组织立法能力强，企业即便无责也常被迫「放血」息事</td><td class="sm">第 092 讲《被放逐的高贵自由者》</td></tr><tr><td style="width:96px"><code>V1-097-a</code></td><td><span class="gb g-yellow">部分说中</span> 阿里巴巴最早留下的并非当时最优秀的员工，最优秀的人因朝三暮四反而没赚到钱</td><td class="sm">第 097 讲（互联网章小结）</td></tr><tr><td style="width:96px"><code>V1-100-a</code></td><td><span class="gb g-yellow">部分说中</span> 巨人大厦为满足领导好大喜功、追求亚洲第一高楼而随意加盖楼层</td><td class="sm">第 100 讲《政商关系》</td></tr><tr><td style="width:96px"><code>V1-100-b</code></td><td><span class="gb g-yellow">部分说中</span> 史玉柱早期与政府关系过热、没摆清位置，巨人出事后政府未施援手</td><td class="sm">第 100 讲《政商关系》</td></tr><tr><td style="width:96px"><code>V1-102-a</code></td><td><span class="gb g-yellow">部分说中</span> 长期看好比特币在虚拟货币生态中充当锚定货币</td><td class="sm">第 102 讲《比特币与传统货币的比较》</td></tr><tr><td style="width:96px"><code>V1-101-b</code></td><td><span class="gb g-yellow">部分说中</span> 百分之九十九的场景不需要现金，只需要银行账号数据的转换</td><td class="sm">第 101 讲《比特币如何实现？》</td></tr><tr><td style="width:96px"><code>V1-111-a</code></td><td><span class="gb g-yellow">部分说中</span> 中医在美国被归入替代医学，因缺乏验证体系而过不了大样本双盲测试</td><td class="sm">第 111 讲《中医与巫师》</td></tr><tr><td style="width:96px"><code>V1-110-a</code></td><td><span class="gb g-yellow">部分说中</span> AI 在现阶段无法颠覆医学，只能在贫困地区给赤脚医生当参考</td><td class="sm">第 110 讲《AI 医疗与就医误区》</td></tr><tr><td style="width:96px"><code>V1-118-a</code></td><td><span class="gb g-yellow">部分说中</span> 2013 年 10 月神州泰岳王宁分割 1.2 亿股（约 12.3 亿元）给前妻，丧失第一大股东地位</td><td class="sm">第 118 讲《离婚的代价》</td></tr><tr><td style="width:96px"><code>V1-122-a</code></td><td><span class="gb g-yellow">部分说中</span> 落马贪官绝大多数都是被家人拉下水的</td><td class="sm">第 122 讲《三观决定家庭财富》</td></tr><tr><td style="width:96px"><code>V1-127-a</code></td><td><span class="gb g-yellow">部分说中</span> 中国本质上目前还没有信托，西方的信托到中国变成了刚兑的理财产品</td><td class="sm">第 127 讲《中西财产观差异》</td></tr><tr><td style="width:96px"><code>V1-132-a</code></td><td><span class="gb g-yellow">部分说中</span> 蔡崇信弃美国律所十几万美金年薪、以 500 元月薪加入阿里，后身价约四五十亿美金</td><td class="sm">第 132 讲《非线性通道》</td></tr><tr><td style="width:96px"><code>V1-134-a</code></td><td><span class="gb g-yellow">部分说中</span> 他自陈在 BCC 分叉时看多并喊单「买了一定能涨」，并称结果果然如此</td><td class="sm">第 134 讲《BTC 与 BCC》</td></tr><tr><td style="width:96px"><code>V1-140-a</code></td><td><span class="gb g-yellow">部分说中</span> 任何领域只要出现硅基化，整个产业都会几何级数上升</td><td class="sm">第 140 讲《区块链、硅基化、数字资产、意识互联》</td></tr><tr><td style="width:96px"><code>V1-140-b</code></td><td><span class="gb g-yellow">部分说中</span> 碳基交往最多维持 150 人的关系（邓巴数），是碳基的一个诅咒</td><td class="sm">第 140 讲《区块链、硅基化、数字资产、意识互联》</td></tr><tr><td style="width:96px"><code>V1-S21-b</code></td><td><span class="gb g-yellow">部分说中</span> 2017 年瑞波币从 3 分涨到 3 元、以太坊从几美金涨到 300 美金</td><td class="sm">vol.146《我的明治维新 Part.2》（补遗 146–155）</td></tr><tr><td style="width:96px"><code>V1-S21-c</code></td><td><span class="gb g-yellow">部分说中</span> 区块链行业就是 1992 年的互联网，并有十年之约（2016 → 2026）</td><td class="sm">vol.146《我的明治维新 Part.2》（补遗 146–155）</td></tr><tr><td style="width:96px"><code>V2-s4-d</code></td><td><span class="gb g-yellow">部分说中</span> 同一 AI 服务各地区价差巨大，token 中转站是合法生意</td><td class="sm">卷二 · 机会地图与「先探图再下注」 · 00:25:03 附近</td></tr><tr><td style="width:96px"><code>V2-s5-b</code></td><td><span class="gb g-yellow">部分说中</span> 20–40 岁是肌肉投资回报比最高的阶段，30–40 岁肌肉量到顶</td><td class="sm">卷二 · 健康是第一杠杆：薄肌 · 01:00:00 附近</td></tr><tr><td style="width:96px"><code>V2-s8-b</code></td><td><span class="gb g-yellow">部分说中</span> 他说当年向巴菲特推销比特币与马斯克，十几年后马斯克真成首富</td><td class="sm">卷二 · 认知操作系统：Small Ego · 02:15:00 附近</td></tr><tr><td style="width:96px"><code>V2-s9-c</code></td><td><span class="gb g-yellow">部分说中</span> 他的三个商业标杆 Musk、Buffett、Trump「凑巧都是宾大毕业」</td><td class="sm">卷二 · 财富自由之后 · 03:55:00 附近</td></tr></tbody></table></details>
+
+    <p class="sec-src"><span class="gb g-gray">不对错坐标系里</span>价值观、方法论与自我叙事——不评级，不是「不能听」，是没有公开数据能判对错。方法论部分看本页 §01。</p>
+    <details><summary>不评级 · 68 条</summary>
+  <table><thead><tr><th style="width:96px">编号</th><th>断言与对待方式</th><th style="width:170px">出处</th></tr></thead><tbody>
+  <tr><td style="width:96px"><code>V1-013-a</code></td><td><span class="gb g-gray">不评级</span> 人生是一场「观念战争」，必须先站队，站错队一切努力都是给别人做嫁衣。</td><td class="sm">第 013 讲（课程大纲与「观念的战争」）</td></tr><tr><td style="width:96px"><code>V1-S1-b</code></td><td><span class="gb g-gray">不评级</span> 先确定三观（明道），再谈策略（体用）与执行（知数），层序比「术」更靠上。</td><td class="sm">板块 ①（这套课是什么 · 三观工程）</td></tr><tr><td style="width:96px"><code>V1-007-a</code></td><td><span class="gb g-gray">不评级</span> 财富自由＝不需要为金钱做出任何价值观的妥协。</td><td class="sm">第 007 讲《一夜暴富》</td></tr><tr><td style="width:96px"><code>V1-007-b</code></td><td><span class="gb g-gray">不评级</span> 精神自由优先于财务自由，先有精神自由，财富自由会自然跟上。</td><td class="sm">第 007 讲《一夜暴富》</td></tr><tr><td style="width:96px"><code>V1-001-b</code></td><td><span class="gb g-gray">不评级</span> 大多数人勤劳却不富有，根因是从没把自己的人生当战略；越穷越需要战略。</td><td class="sm">第 001 讲（战略：为什么大多数人勤劳却不富有）</td></tr><tr><td style="width:96px"><code>V1-017-a</code></td><td><span class="gb g-gray">不评级</span> 普通人用「单变量思维」解释一切成功，精英用「多变量思维」。</td><td class="sm">第 017 讲（单变量思维 vs 多变量思维）</td></tr><tr><td style="width:96px"><code>V1-S3-a</code></td><td><span class="gb g-gray">不评级</span> 「投资自己」是全课程回报率最高的建议——你绝对是最了解自己的人。</td><td class="sm">板块 ③（战略 · 投资自己）</td></tr><tr><td style="width:96px"><code>V1-041-a</code></td><td><span class="gb g-gray">不评级</span> 房子只是一个普通商品，不该被赋予「自我价值的终极实现、安全感的全部来源」。</td><td class="sm">第 041 讲《房子只是一个普通商品》</td></tr><tr><td style="width:96px"><code>V1-036-a</code></td><td><span class="gb g-gray">不评级</span> 判断婚姻不看动机而看结果；带占便宜动机进入婚姻的人最终会丢掉自我与尊严。</td><td class="sm">第 036 讲（判断婚姻看结果不看动机）</td></tr><tr><td style="width:96px"><code>V1-028-a</code></td><td><span class="gb g-gray">不评级</span> 在通胀体系下，扩大「可控负债」是好事。</td><td class="sm">第 028 讲《扩大你的可控负债是好事》</td></tr><tr><td style="width:96px"><code>V1-057-a</code></td><td><span class="gb g-gray">不评级</span> 复利最怕大额亏损——亏 50% 就足以抹掉多年积累。</td><td class="sm">第 056 – 062 讲（定律一 · 复利）</td></tr><tr><td style="width:96px"><code>V1-061-a</code></td><td><span class="gb g-gray">不评级</span> 一万小时不是一个人的事，要有老师、要分割、要逐个纠正、要复盘。</td><td class="sm">第 061 讲（一万小时不是一个人的事）</td></tr><tr><td style="width:96px"><code>V1-062-a</code></td><td><span class="gb g-gray">不评级</span> 做有溢出效应的事（如互联网产品经理）才能获得个人不具备的平台杠杆。</td><td class="sm">第 062 讲（杠杆：做有溢出效应的事）</td></tr><tr><td style="width:96px"><code>V1-033-a</code></td><td><span class="gb g-gray">不评级</span> 成年与否不看年龄，而看能否自由选择并为其承担代价。</td><td class="sm">第 033 讲（成年＝自由选择并承担代价）</td></tr><tr><td style="width:96px"><code>V1-032-a</code></td><td><span class="gb g-gray">不评级</span> 只需了解罗斯巴德、米塞斯、哈耶克的基本观点，就足以指导自己的生活。</td><td class="sm">第 032 讲（自由意志主义与奥地利学派）</td></tr><tr><td style="width:96px"><code>V1-031-b</code></td><td><span class="gb g-gray">不评级</span> 把个人人生比作「一人即一国」的开国大典，之后还有三场革命等着你。</td><td class="sm">第 031 讲「一人即一国——这是你的开国大典」</td></tr><tr><td style="width:96px"><code>V1-065-a</code></td><td><span class="gb g-gray">不评级</span> 道德应看结果不看动机：无论多有心机，只要做了合法交易就是好人。</td><td class="sm">第 065 讲（道德看结果不看动机）</td></tr><tr><td style="width:96px"><code>V1-018-a</code></td><td><span class="gb g-gray">不评级</span> 个人奋斗具有集体意义——城里若有几个好人，整座城可能因之得救。</td><td class="sm">第 018 讲（个人奋斗的国家与社会意义）</td></tr><tr><td style="width:96px"><code>V1-S8-a</code></td><td><span class="gb g-gray">不评级</span> 商人最大的道德是把本职工作做到最好，这本身就是最大的慈善。</td><td class="sm">板块 ⑧（个人奋斗的道德合法性 · 商人最大的道德）</td></tr><tr><td style="width:96px"><code>V1-001-a</code></td><td><span class="gb g-gray">不评级</span> 我买比特币不是因为看涨，而是被其特性吸引，「比特币相当于我交的党费」。</td><td class="sm">第 001 讲（投资实战 · 比特币）</td></tr><tr><td style="width:96px"><code>V1-002-b</code></td><td><span class="gb g-gray">不评级</span> 好公司出问题、但逻辑内核没坏的时候，就是投资的最好时机。</td><td class="sm">第 002 讲（唯品会 · 时机论）</td></tr><tr><td style="width:96px"><code>V1-066-a</code></td><td><span class="gb g-gray">不评级</span> 不确定性是财富自由最重要的「培养皿」。</td><td class="sm">第 066 讲（不确定性是财富自由的培养皿）</td></tr><tr><td style="width:96px"><code>V1-076-a</code></td><td><span class="gb g-gray">不评级</span> 产品不是被设计出来的，是演化出来的，应先用最小可用产品拿反馈。</td><td class="sm">第 076 讲（MVP 与「演化而非设计」）</td></tr><tr><td style="width:96px"><code>V1-023-a</code></td><td><span class="gb g-gray">不评级</span> 任何关系（对父母、对子女）都不应有兜底义务。</td><td class="sm">第 023 讲（任何关系都不应有兜底义务）</td></tr><tr><td style="width:96px"><code>V1-023-b</code></td><td><span class="gb g-gray">不评级</span> 一定要去大城市，因为只有大城市允许新道德产生；小城市这么做会被舆论杀死。</td><td class="sm">第 023 讲（去大城市）</td></tr><tr><td style="width:96px"><code>V1-024-a</code></td><td><span class="gb g-gray">不评级</span> 所有公司的秘密都藏在财务里；接手家族企业应先熟业务、先看财务。</td><td class="sm">第 024 讲（内蒙煤老板的儿子）</td></tr><tr><td style="width:96px"><code>V1-022-a</code></td><td><span class="gb g-gray">不评级</span> 农村姐姐给弟弟寄钱是「原始结构」，应不寄钱、划清边界；金钱比性更温暖。</td><td class="sm">第 022 讲（给弟弟寄钱的姐姐）</td></tr><tr><td style="width:96px"><code>V1-096-a</code></td><td><span class="gb g-gray">不评级</span> 互联网创业公司是中国转型期最后一条上升通道</td><td class="sm">第 096 讲（互联网章小结）</td></tr><tr><td style="width:96px"><code>V1-098-a</code></td><td><span class="gb g-gray">不评级</span> 创业首先应当了解的不是成功而是失败</td><td class="sm">第 098 讲《吴晓波与《大败局》》</td></tr><tr><td style="width:96px"><code>V1-101-a</code></td><td><span class="gb g-gray">不评级</span> 算力即权利，第一次让计算机与密码学的权力大于行政与暴力的权力</td><td class="sm">第 101 讲《比特币如何实现？》</td></tr><tr><td style="width:96px"><code>V1-106-a</code></td><td><span class="gb g-gray">不评级</span> 医疗就是这么贵，对免费医疗的幻想应首先破除</td><td class="sm">第 106 讲《财富自由与医疗》</td></tr><tr><td style="width:96px"><code>V1-117-a</code></td><td><span class="gb g-gray">不评级</span> 结婚跟公司上市一样，必须做好充分的财务审计</td><td class="sm">第 117 讲《合伙之前先散伙》</td></tr><tr><td style="width:96px"><code>V1-123-a</code></td><td><span class="gb g-gray">不评级</span> 与父母家人要和解：表达自己的三观，但不要与他人争论</td><td class="sm">第 123 讲《与家人和解》</td></tr><tr><td style="width:96px"><code>V1-126-a</code></td><td><span class="gb g-gray">不评级</span> 中小学历史与政治课本宣扬暴力抢劫思想、美化农民起义，主张重编课本</td><td class="sm">第 126 讲《抢劫文化》</td></tr><tr><td style="width:96px"><code>V1-131-a</code></td><td><span class="gb g-gray">不评级</span> 他在区块链早期每月领到 100 万枚 XRP（一年 1200 万枚）</td><td class="sm">第 131 讲《规则制定领域》</td></tr><tr><td style="width:96px"><code>V1-133-a</code></td><td><span class="gb g-gray">不评级</span> 财富增长是动态摇摆、指数上升的过程，非线性增长</td><td class="sm">第 133 讲《上升曲线》</td></tr><tr><td style="width:96px"><code>V1-137-a</code></td><td><span class="gb g-gray">不评级</span> 小升初三年、初高中两三年学完，十六年教育五到六年读完，大学就不要上了</td><td class="sm">第 137 讲《学习的力量》</td></tr><tr><td style="width:96px"><code>V1-143-a</code></td><td><span class="gb g-gray">不评级</span> 他公司的员工成本约 150 万元/月，月烧钱近 200 万元，年支出约 2400 万元</td><td class="sm">第 143 讲《创业使命》</td></tr><tr><td style="width:96px"><code>V1-144-a</code></td><td><span class="gb g-gray">不评级</span> 人的一生最难的是认可自己成为世界的中心；个人是最终的价值</td><td class="sm">第 144 讲《我的明治维新》</td></tr><tr><td style="width:96px"><code>V1-145-a</code></td><td><span class="gb g-gray">不评级</span> 最好的制度便是把利益分配给创造利益的人</td><td class="sm">第 145 讲《我们就是这个时代的既得利益者》</td></tr><tr><td style="width:96px"><code>V1-145-b</code></td><td><span class="gb g-gray">不评级</span> 我们正处于中国历史上最好、最美、最令人留恋的一个时代</td><td class="sm">第 145 讲《我们就是这个时代的既得利益者》</td></tr><tr><td style="width:96px"><code>V1-S21-e</code></td><td><span class="gb g-gray">不评级</span> 应试教育不是智商测试，核心是自制力与刻意的练习</td><td class="sm">vol.152《我的明治维新 Part.8》（补遗 146–155）</td></tr><tr><td style="width:96px"><code>V2-s1-c</code></td><td><span class="gb g-gray">不评级</span> 「认知决定命运」——黄毛、薄肌、Crypto 本质都是认知</td><td class="sm">卷二 · 开场与自我介绍 · 00:01:25 附近</td></tr><tr><td style="width:96px"><code>V2-s2-a</code></td><td><span class="gb g-gray">不评级</span> 餐前餐后各拍一张餐桌照交 Claude 算热量与蛋白质</td><td class="sm">卷二 · 用 AI 托管一天 · 00:01:31 附近</td></tr><tr><td style="width:96px"><code>V2-s2-b</code></td><td><span class="gb g-gray">不评级</span> 训练视频交 AI 记账，按渐进超载自动排下一次加重</td><td class="sm">卷二 · 用 AI 托管一天 · 00:04:30 附近</td></tr><tr><td style="width:96px"><code>V2-s2-c</code></td><td><span class="gb g-gray">不评级</span> 数据全存本地 Markdown、用 API 解耦模型，避免供应商锁定</td><td class="sm">卷二 · 用 AI 托管一天 · 00:23:40 附近</td></tr><tr><td style="width:96px"><code>V2-s3-a</code></td><td><span class="gb g-gray">不评级</span> 零资源起步三件套：孙学（认知）＋薄肌（身体）＋黄毛理论（屏蔽力）</td><td class="sm">卷二 · 零资源起步的三件套 · 00:08:02 附近</td></tr><tr><td style="width:96px"><code>V2-s3-b</code></td><td><span class="gb g-gray">不评级</span> 零成本先用免费智谱 / Kimi 完成「全 AI 化」，不必买电脑</td><td class="sm">卷二 · 零资源起步的三件套 · 00:10:00 附近</td></tr><tr><td style="width:96px"><code>V2-s3-c</code></td><td><span class="gb g-gray">不评级</span> 起步四步：攒数据 → AI 诊断 → 问三家取中策 → 持续 tuning</td><td class="sm">卷二 · 零资源起步的三件套 · 00:20:00 附近</td></tr><tr><td style="width:96px"><code>V2-s4-b</code></td><td><span class="gb g-gray">不评级</span> 前三套房绝对不要买；第 4–6 套见更优立刻买，第 6 套对应 618</td><td class="sm">卷二 · 机会地图与「先探图再下注」 · 00:41:37</td></tr><tr><td style="width:96px"><code>V2-s4-c</code></td><td><span class="gb g-gray">不评级</span> 有了信息之后就不需要做决定，做决定是无信息时才做的事</td><td class="sm">卷二 · 机会地图与「先探图再下注」 · 00:43:53</td></tr><tr><td style="width:96px"><code>V2-s5-a</code></td><td><span class="gb g-gray">不评级</span> 寿命 100 分＝心肺 25＋肌肉 25＋其他 50，前 50 分可靠抗阻拿满</td><td class="sm">卷二 · 健康是第一杠杆：薄肌 · 01:02:11</td></tr><tr><td style="width:96px"><code>V2-s5-c</code></td><td><span class="gb g-gray">不评级</span> 物质上你是富人、身体上是穷人，练薄肌就是领工资、把工资调高</td><td class="sm">卷二 · 健康是第一杠杆：薄肌 · 01:07:09</td></tr><tr><td style="width:96px"><code>V2-s5-d</code></td><td><span class="gb g-gray">不评级</span> 被全网嘲笑后他第一个去请教 AI，推翻旧认知、转向「肌肉有益」</td><td class="sm">卷二 · 健康是第一杠杆：薄肌 · 00:52:46 附近</td></tr><tr><td style="width:96px"><code>V2-s6-a</code></td><td><span class="gb g-gray">不评级</span> 「30 岁前不买房不买车不结婚」的实质是反对过早锁定流动性</td><td class="sm">卷二 · 逐水草而居 · 01:22:07 附近</td></tr><tr><td style="width:96px"><code>V2-s6-c</code></td><td><span class="gb g-gray">不评级</span> 小众是好事，小众说明是风口；大家都接受了再进去就没意义</td><td class="sm">卷二 · 逐水草而居 · 01:31:43</td></tr><tr><td style="width:96px"><code>V2-s7-a</code></td><td><span class="gb g-gray">不评级</span> 加密货币的本质是把货币翻译成 AI 与机器听得懂的可编程语言</td><td class="sm">卷二 · Crypto：把货币翻译给机器 · 01:32:29</td></tr><tr><td style="width:96px"><code>V2-s7-e</code></td><td><span class="gb g-gray">不评级</span> 他称自己早在 2012 年之后仓位已全部 crypto 化</td><td class="sm">卷二 · Crypto：把货币翻译给机器 · 01:50:14 附近</td></tr><tr><td style="width:96px"><code>V2-s8-a</code></td><td><span class="gb g-gray">不评级</span> 主动健康管理：无症状也去医院主动要求检测，先让 AI 列指标</td><td class="sm">卷二 · 认知操作系统：Small Ego · 02:04:03 附近</td></tr><tr><td style="width:96px"><code>V2-s8-d</code></td><td><span class="gb g-gray">不评级</span> Ego 应与成功程度成反比，越成功越危险，要持续给认知打补丁</td><td class="sm">卷二 · 认知操作系统：Small Ego · 02:10:00 附近</td></tr><tr><td style="width:96px"><code>V2-s9-a</code></td><td><span class="gb g-gray">不评级</span> 先自由后财富；自由是主观的、可立刻获得，财富只是伴生品</td><td class="sm">卷二 · 财富自由之后 · 02:40:44 附近</td></tr><tr><td style="width:96px"><code>V2-s9-b</code></td><td><span class="gb g-gray">不评级</span> 钱解决不了认知与婚姻感情；金钱只是放大器，改不了输入端</td><td class="sm">卷二 · 财富自由之后 · 02:55:00 附近</td></tr><tr><td style="width:96px"><code>V2-s9-d</code></td><td><span class="gb g-gray">不评级</span> 他 22 岁创业时定下「创业到 122 岁」，把时间长度当纪录去破</td><td class="sm">卷二 · 财富自由之后 · 03:26:18</td></tr><tr><td style="width:96px"><code>V2-s9-e</code></td><td><span class="gb g-gray">不评级</span> 他愿不要工资、甚至倒贴钱去 OpenAI / Anthropic 上班</td><td class="sm">卷二 · 财富自由之后 · 03:51:10</td></tr><tr><td style="width:96px"><code>V2-s9-f</code></td><td><span class="gb g-gray">不评级</span> 把人生前 50% 当作采集样本的阶段，先体验累积再下结论</td><td class="sm">卷二 · 财富自由之后 · 03:05:00 附近</td></tr><tr><td style="width:96px"><code>V2-s13-a</code></td><td><span class="gb g-gray">不评级</span> 把重要记录落成本地 Markdown 并用 API 解耦模型，拿回数据主权</td><td class="sm">卷二 · 如果只做三件事 · 附录（无时间码）</td></tr><tr><td style="width:96px"><code>V2-s13-b</code></td><td><span class="gb g-gray">不评级</span> 买房、择业、选城市前先看够 100 个选项，用「拿信息」代替「做决定」</td><td class="sm">卷二 · 如果只做三件事 · 附录（无时间码）</td></tr><tr><td style="width:96px"><code>V2-s13-c</code></td><td><span class="gb g-gray">不评级</span> 现在就开始练抗阻；20–40 岁是明确且几乎无争议的时间窗口</td><td class="sm">卷二 · 如果只做三件事 · 附录（无时间码）</td></tr></tbody></table></details>
+
+    <p class="sec-src" style="margin-top:14px"><span class="gb g-yellow">还没到检验点</span>　15 条——多为卷二（2026 年录制）的长期判断，现在下判定为时过早，详见卷三 §06。<br>
+    <span class="gb g-gray">无法核验</span>　3 条——现在就该能核但确实查不到公开来源，本站不作判定：持这套价值观的人在中国是沧海一粟，「放到任何一个地方分分钟给别人做掉」。；节目 2016 年 9 月 15 日开始准备，2017 年 10 月 4 日录制一周年复盘；孙宇晨公布身高 172cm、体重约 75kg、体脂约 29%。</p>
+  </section>
+
+  <section id="s3">
+    <h2 class="sec"><span class="num">03</span>已证伪的 4 条 <span class="sec-time">别再引用</span></h2>
+    <p class="sec-lead">以下断言与今天可查证的事实相反。<b>如果别处看到有人引用，可以直接用这里的来源反驳。</b></p>
+    <table><thead><tr><th style="width:96px">编号</th><th>断言</th><th style="width:40%">今天的事实</th></tr></thead><tbody>
+    <tr><td><code>V1-026-b</code></td><td>黄金已非货币、只是一种普通商品，不能用来对冲金融危机。<div class="sm">第 026 讲《布林顿森林体系的建立与崩塌》</div></td><td class="sm">被证伪。2025 年金价从年初约 2600 美元/盎司涨至年末约 4318 美元（+64.56%），全年逾 50 次创历史新高；2026 年 1 月一度冲至约 5600 美元峰值后剧烈回调。2025 年全球央行购金 863 吨、黄金 ETF 净增 801 吨均创纪录；欧洲央行报告称截至 2025 年底黄金占全球官方储备 27%、超越美国国债成为第一大储备资产。2026 年 10 月 14 日现货金约 4150 美元/盎司。黄金在危机中的避险与储备功能明显强化，绝非"垃圾桶"。</td></tr><tr><td><code>V1-043-a</code></td><td>乐视是 A 股稀缺的「有清晰使命愿景价值观」的公司，对贾跃亭充满期待。<div class="sm">第 043 讲（番外：投资分享会）</div></td><td class="sm">彻底落空。乐视网 2020 年 5 月 14 日被深交所终止上市，最后交易日 2020 年 7 月 20 日收报 0.18 元、总市值仅 7.18 亿元，较 2015 年峰值约 1700 亿元蒸发超 99%。2021 年证监会认定其 2007–2016 年财务造假、欺诈发行，罚款 2.41 亿元，贾跃亭被终身市场禁入；2023 年 9 月北京金融法院判乐视网赔偿投资者 20.4 亿元。2025 年乐视网营收仅 1.86 亿元、净亏 3.08 亿元、净资产约 -214 亿元；贾跃亭赴美造车 FF 十年交付不足 20 辆。</td></tr><tr><td><code>V1-103-a</code></td><td>2017 年 5 月在中国交易所买入的比特币全部无法提现<div class="sm">第 103 讲《买买提》</div></td><td class="sm">2017年9月起三大平台（比特币中国、OKCoin、火币）确实停止交易并下架，但均开放提现/提币通道：比特币中国数字资产及人民币最终提现截止2017年10月30日12:00，火币、OKCoin于10月31日前逐步停止兑人民币交易并保留提币，提现72小时内到账。用户可兑换人民币或提币至钱包，并非“全部无法提现”。</td></tr><tr><td><code>V2-s7-b</code></td><td>SWIFT 是 1955 年发明的二战后盟军电报系统产物<div class="sm">卷二 · Crypto：把货币翻译给机器 · 01:38:58</div></td><td class="sm">说错。SWIFT（环球银行金融电信协会，Society for Worldwide Interbank Financial Telecommunication）于1973年5月3日在比利时成立（239家银行、15国），1977年正式上线运行；它取代的是当时的 Telex 电传系统，直接诱因是1971年布雷顿森林体系崩溃、汇率转浮动后跨境交易量激增，与『二战后盟军电报系统』并无关系（二战1945年结束，彼时SWIFT尚不存在）。</td></tr>
+    </tbody></table>
+  </section>
+
+  <section id="s4">
+    <h2 class="sec"><span class="num">04</span>这页不做的事</h2>
+    <div class="two">
+      <div class="note-box">
+        <h4>不给操作建议</h4>
+        <p>「该不该买房、该不该辞职、该不该买币」——本页一律不回答。标绿的条目只说明「这句与事实相符」，<b>不构成「照做」的理由</b>：事实成立不等于适合你。</p>
+        <p>方法论条目给的是适用条件与边界，不是行动清单。</p>
+      </div>
+      <div class="note-box">
+        <h4>趋势推演缓行</h4>
+        <p>「用现在的数据 + 逻辑推演预测未来几年」是本站规划中的下一块。它一旦做，会是<b>编者自己的判断</b>，与孙宇晨的话分开标注——这是为什么它单独成一个板块，而不是塞进卷一卷二。</p>
+        <p>在它上线之前，本页的分级就是本站能给普通人的主要增量。</p>
+      </div>
+    </div>
+    <p class="sec-src" style="margin-top:16px"><span class="tag tag-mid">数据</span>全部分级依据来自卷三核对（53 条，每条挂公开来源）与结构化断言库（<code>data/claims.jsonl</code>，136 条）。方法论提炼由编者加工，适用边界已逐条给出。</p>
+  </section>
+
+</main>
+</div>
+<div class="bottomnav"><div class="bn-in">
+  <a class="btn" href="volume3.html">← 卷三 · 十年之后回头看</a>
+  <span class="bn-tip">可以拿走的部分 · 分级与方法论</span>
+  <a class="btn" href="index.html">总览 →</a>
+</div></div>
+<footer>
+  <div class="foot-inner">
+    <p><b>本页：</b>对 136 条断言的可信度分级与 10 条可迁移方法论。分级依据全部来自卷三的逐条核对（公开来源可复核）；方法论条目由编者提炼，适用边界已逐条给出。</p>
+    <p><b>各页：</b><a href="index.html">总览</a> ·
+    <a href="2016-2017-wealthfreedom.html">卷一 · 音频课</a> ·
+    <a href="2026-interview.html">卷二 · 长访谈</a> ·
+    <a href="volume3.html">卷三 · 十年之后回头看</a> ·
+    <a href="takeaway.html">可以拿走的部分</a> ·
+    <a href="audit.html">审计报告</a></p>
+    <p><b>免责声明：</b>本页不构成任何投资建议、税务建议、医疗建议或人生建议。标「说中」只代表断言与公开数据相符，不构成「照做」的理由。方法论条目均已标注适用边界。孙宇晨本人是波场 TRON 创始人、加密资产的直接利益相关方。</p>
+  </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>window.SITE_META={"title":"可以拿走的部分：孙割观点使用说明 · 孙割这十年","desc":"136 条断言的可信度分级 + 10 条可迁移方法论。"};</script>
+<script src="assets/site.js" defer></script>
+</body>
+</html>
