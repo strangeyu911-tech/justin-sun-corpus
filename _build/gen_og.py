@@ -3,7 +3,8 @@
 import os
 from PIL import Image, ImageDraw, ImageFont
 
-OUT = r"D:\workbuddy\Data\Agent-Reach\outputs\sunyuchen-site\assets\og.png"
+# 输出到「本脚本所在仓库」的 assets/og.png——用相对路径，避免换副本/换机器时写错地方
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "assets", "og.png")
 W, H = 1200, 630
 BG = (251, 250, 248)
 INK = (23, 24, 26)
