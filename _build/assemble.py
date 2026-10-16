@@ -2,9 +2,9 @@
 """组装站点页面：卷一 / 卷二（首页与审计页另行手写）。"""
 import io, os, re, json
 
-ROOT = r"D:\workbuddy\Data\Agent-Reach\outputs\sunyuchen-site"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # 站点根 = _build/ 的父目录
 BUILD = os.path.join(ROOT, "_build")
-RAW = r"D:\workbuddy\Data\Agent-Reach\outputs"
+RAW = r"D:\workbuddy\Data\Agent-Reach\outputs"   # 外部原始素材（不在仓库里，换机器需改这一行）
 SRC = {
     "vol1": os.path.join(RAW, "wealthfreedom", "孙宇晨_财富自由革命之路_80讲总结.html"),
     "vol2": os.path.join(RAW, "sunyuchentalk", "对话孙宇晨_4小时访谈总结.html"),

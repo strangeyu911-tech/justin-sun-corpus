@@ -1,23 +1,23 @@
 {
  "pages": {
   "index.html": {
-   "size": 48582,
-   "chars": 32988,
-   "lines": 612,
+   "size": 49802,
+   "chars": 33823,
+   "lines": 633,
    "tags": {
     "div": [
-     115,
-     115,
+     118,
+     118,
      0
     ],
     "section": [
-     6,
-     6,
+     7,
+     7,
      0
     ],
     "p": [
-     90,
-     90,
+     91,
+     91,
      0
     ],
     "li": [
@@ -41,8 +41,8 @@
      0
     ],
     "h2": [
-     6,
-     6,
+     7,
+     7,
      0
     ],
     "h3": [
@@ -51,8 +51,8 @@
      0
     ],
     "h4": [
-     8,
-     8,
+     7,
+     7,
      0
     ],
     "blockquote": [
@@ -66,13 +66,13 @@
      0
     ],
     "span": [
-     140,
-     140,
+     142,
+     142,
      0
     ],
     "a": [
-     42,
-     42,
+     46,
+     46,
      0
     ],
     "table": [
@@ -131,10 +131,10 @@
      0
     ]
    },
-   "ids": 22,
+   "ids": 23,
    "dup_ids": [],
    "sections": 6,
-   "toc_links": 12,
+   "toc_links": 13,
    "n_tag_fact": 9,
    "n_tag_mid": 5,
    "n_tag_low": 3,
@@ -150,29 +150,29 @@
    "n_img_alt": 0,
    "n_btn": 17,
    "n_btn_aria": 3,
-   "n_a_ext": 3,
-   "n_a_ext_rel": 3,
+   "n_a_ext": 5,
+   "n_a_ext_rel": 5,
    "n_table": 0,
    "n_tablewrap": 0
   },
   "2016-2017-wealthfreedom.html": {
-   "size": 198685,
-   "chars": 116089,
-   "lines": 1812,
+   "size": 199958,
+   "chars": 116959,
+   "lines": 1834,
    "tags": {
     "div": [
-     540,
-     540,
+     543,
+     543,
      0
     ],
     "section": [
-     26,
-     26,
+     27,
+     27,
      0
     ],
     "p": [
-     432,
-     432,
+     433,
+     433,
      0
     ],
     "li": [
@@ -196,8 +196,8 @@
      0
     ],
     "h2": [
-     26,
-     26,
+     27,
+     27,
      0
     ],
     "h3": [
@@ -221,13 +221,13 @@
      0
     ],
     "span": [
-     790,
-     790,
+     792,
+     792,
      0
     ],
     "a": [
-     37,
-     37,
+     41,
+     41,
      0
     ],
     "table": [
@@ -286,10 +286,10 @@
      0
     ]
    },
-   "ids": 41,
+   "ids": 42,
    "dup_ids": [],
    "sections": 26,
-   "toc_links": 29,
+   "toc_links": 30,
    "n_tag_fact": 35,
    "n_tag_mid": 41,
    "n_tag_low": 6,
@@ -305,29 +305,29 @@
    "n_img_alt": 0,
    "n_btn": 20,
    "n_btn_aria": 6,
-   "n_a_ext": 1,
-   "n_a_ext_rel": 1,
+   "n_a_ext": 3,
+   "n_a_ext_rel": 3,
    "n_table": 0,
    "n_tablewrap": 0
   },
   "2026-interview.html": {
-   "size": 66174,
-   "chars": 41194,
-   "lines": 816,
+   "size": 67447,
+   "chars": 42064,
+   "lines": 838,
    "tags": {
     "div": [
-     115,
-     115,
+     118,
+     118,
      0
     ],
     "section": [
-     14,
-     14,
+     15,
+     15,
      0
     ],
     "p": [
-     103,
-     103,
+     104,
+     104,
      0
     ],
     "li": [
@@ -351,8 +351,8 @@
      0
     ],
     "h2": [
-     14,
-     14,
+     15,
+     15,
      0
     ],
     "h3": [
@@ -376,13 +376,13 @@
      0
     ],
     "span": [
-     170,
-     170,
+     172,
+     172,
      0
     ],
     "a": [
-     25,
-     25,
+     29,
+     29,
      0
     ],
     "table": [
@@ -441,10 +441,10 @@
      0
     ]
    },
-   "ids": 29,
+   "ids": 30,
    "dup_ids": [],
    "sections": 14,
-   "toc_links": 16,
+   "toc_links": 17,
    "n_tag_fact": 35,
    "n_tag_mid": 5,
    "n_tag_low": 2,
@@ -460,29 +460,29 @@
    "n_img_alt": 0,
    "n_btn": 19,
    "n_btn_aria": 5,
-   "n_a_ext": 2,
-   "n_a_ext_rel": 2,
+   "n_a_ext": 4,
+   "n_a_ext_rel": 4,
    "n_table": 0,
    "n_tablewrap": 0
   },
   "audit.html": {
-   "size": 46703,
-   "chars": 33082,
-   "lines": 671,
+   "size": 47975,
+   "chars": 33953,
+   "lines": 693,
    "tags": {
     "div": [
-     89,
-     89,
+     92,
+     92,
      0
     ],
     "section": [
-     10,
-     10,
+     11,
+     11,
      0
     ],
     "p": [
-     73,
-     73,
+     74,
+     74,
      0
     ],
     "li": [
@@ -506,8 +506,8 @@
      0
     ],
     "h2": [
-     10,
-     10,
+     11,
+     11,
      0
     ],
     "h3": [
@@ -531,13 +531,13 @@
      0
     ],
     "span": [
-     131,
-     131,
+     133,
+     133,
      0
     ],
     "a": [
-     25,
-     25,
+     29,
+     29,
      0
     ],
     "table": [
@@ -596,10 +596,10 @@
      0
     ]
    },
-   "ids": 25,
+   "ids": 26,
    "dup_ids": [],
    "sections": 10,
-   "toc_links": 14,
+   "toc_links": 15,
    "n_tag_fact": 7,
    "n_tag_mid": 15,
    "n_tag_low": 4,
@@ -615,21 +615,21 @@
    "n_img_alt": 0,
    "n_btn": 21,
    "n_btn_aria": 7,
-   "n_a_ext": 5,
-   "n_a_ext_rel": 5,
+   "n_a_ext": 7,
+   "n_a_ext_rel": 7,
    "n_table": 6,
    "n_tablewrap": 6
   }
  },
  "align": {
   "2016-2017-wealthfreedom.html": {
-   "hrefs": 29,
+   "hrefs": 30,
    "missing": [],
    "secs": 26,
    "notoc": []
   },
   "2026-interview.html": {
-   "hrefs": 16,
+   "hrefs": 17,
    "missing": [],
    "secs": 14,
    "notoc": []
@@ -650,6 +650,7 @@
  },
  "assets": {
   "assets/site.css": true,
+  "index.html": true,
   "2016-2017-wealthfreedom.html": true,
   "2026-interview.html": true,
   "volume3.html": true,
@@ -660,6 +661,6 @@
   "2026-interview.html#s12": true,
   "volume3.html#s5": true,
   "assets/site.js": true,
-  "index.html": true
+  "qqgroup.js": true
  }
 }

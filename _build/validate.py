@@ -2,7 +2,7 @@
 """站点自检：结构、目录对齐、置信度覆盖、链接与资源、格式一致性。"""
 import io, os, re, json, collections
 
-ROOT = r"D:\workbuddy\Data\Agent-Reach\outputs\sunyuchen-site"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # 站点根 = _build/ 的父目录
 # ⚠️ PAGES 是「格式检查范围」，**不是**站点页面清单：后来的卷三 / 提炼 / 推演三页
 # 有意没纳进来（它们的生成器不走 normalize.py，行内 style 没归一）。
 # 要判断"某页是否存在"请直接 os.path.exists，别拿这个列表当白名单用。
