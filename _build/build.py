@@ -253,6 +253,10 @@ def build_toc(solo, groups):
         for sid, label in subs:
             out.append('<a href="#%s" class="lvl2">%s</a>' % (sid, label))
         out.append('</div></div>')
+    # 末尾一条「加 QQ 群 / 作者微信交流」：正文里 #qq-entry 排在全部 section 之后（页脚之前），
+    # 所以目录里也放最后一行。原先靠 tools/fix-order2.py 事后插，而首页那条是手工加的、
+    # 加到了「06 阅读前提与免责」和「卷一」之间 —— 七页位置不一致。这里直接固化，重建即正确。
+    out.append('<a href="#qq-entry" class="solo">加 QQ 群 / 作者微信交流</a>')
     out.append('</nav>')
     out.append('<div id="toc-mask"></div>')
     return '\n'.join(out)

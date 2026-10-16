@@ -29,6 +29,7 @@ const shell = idx.slice(idx.indexOf('<div class="topbar">'), idx.indexOf('<heade
 <a href="index.html" class="solo">总览</a>
 <a href="volume3.html" class="solo">卷三 · 十年之后回头看</a>
 <a href="takeaway.html" class="solo">可以拿走的部分</a>
+<a href="#qq-entry" class="solo">加 QQ 群 / 作者微信交流</a>
 </nav>`);
 
 /* ---------- 组件 ---------- */

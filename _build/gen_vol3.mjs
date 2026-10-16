@@ -64,6 +64,7 @@ const shell = idx.slice(idx.indexOf('<div class="topbar">'), idx.indexOf('<heade
 <a href="index.html" class="solo">总览 · 两卷 + 十年对照</a>
 <a href="2016-2017-wealthfreedom.html" class="solo">卷一 · 2016–17 音频课</a>
 <a href="2026-interview.html" class="solo">卷二 · 2026 长访谈</a>
+<a href="#qq-entry" class="solo">加 QQ 群 / 作者微信交流</a>
 </nav>`);
 
 /* ---------- 页面 ---------- */

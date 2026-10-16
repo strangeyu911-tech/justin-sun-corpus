@@ -2,6 +2,11 @@
 """孙割站收尾：① 修正顺序（应为「QQ 群卡片 → 同一位作者的其他站点」）
             ② 各页侧栏目录补一条「加 QQ 群 / 作者微信交流」
 
+⚠️ 2026-10-16 起 ② 已降级为**兜底**：生成器（_build/build.py 的 build_toc、
+   _build/gen_vol3|takeaway|outlook.mjs 的 TOC 模板）已直接固化该条目，重建即自带。
+   本脚本的 ② 有 `'href="#qq-entry"' not in seg` 守卫，不会重复插；位置是目录末尾，
+   与生成器一致。当初首页那条是手工加的、错插在「06」和「卷一」之间，才导致七页不统一。
+
 幂等。用法：python tools/fix-order2.py
 """
 import io
