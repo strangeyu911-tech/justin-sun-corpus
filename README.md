@@ -18,7 +18,7 @@
 [![逐字引语](https://img.shields.io/badge/%E9%80%90%E5%AD%97%E5%BC%95%E8%AF%AD-50%20%E6%9D%A1%E5%B8%A6%E5%87%BA%E5%A4%84-565a5f?style=flat-square)](#置信度标注长什么样)
 [![素材](https://img.shields.io/badge/%E7%B4%A0%E6%9D%90-7%2C068%20%E5%8F%A5%E5%AD%97%E5%B9%95-565a5f?style=flat-square)](#素材来源强度依次递减)
 [![电子书](https://img.shields.io/badge/%E7%94%B5%E5%AD%90%E4%B9%A6-PDF%20%2F%20EPUB-3451b2?style=flat-square)](https://github.com/strangeyu911-tech/justin-sun-corpus/releases/tag/ebook-2026-10)
-[![许可](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-MIT-565a5f?style=flat-square)](#许可)
+[![许可](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-MIT-565a5f?style=flat-square)](LICENSE)
 
 ### [打开在线阅读](https://strangeyu911-tech.github.io/justin-sun-corpus/) · [站点自检](https://strangeyu911-tech.github.io/justin-sun-corpus/audit.html)
 
@@ -51,6 +51,11 @@
 <tr><td align="right" nowrap><b>交流</b></td><td align="left">
 
 QQ 群 **1130141971**（去 QQ 里搜群号）
+
+</td></tr>
+<tr><td align="right" nowrap><b>其他站</b></td><td align="left">
+
+同一位作者的另一处，体裁与口径完全不同：[以日为镜](https://mirror.strangeyu.xyz/)——以日本 1990 年代之后三十年为镜看中国当下，七篇 + 85 条参考资料
 
 </td></tr>
 <tr><td align="right" nowrap><b>许可</b></td><td align="left">
