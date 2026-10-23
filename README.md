@@ -22,32 +22,32 @@
 ### [打开在线阅读](https://strangeyu911-tech.github.io/justin-sun-corpus/) · [站点自检](https://strangeyu911-tech.github.io/justin-sun-corpus/audit.html)
 
 <table>
-<tr><td align="right"><b>读</b></td><td align="left">
+<tr><td align="right" nowrap><b>读</b></td><td align="left">
 
 [首页](https://strangeyu911-tech.github.io/justin-sun-corpus/)十年对照 9 组 · 卷一 [2016–2017](2016-2017-wealthfreedom.html) 26 个板块 · 卷二 [2026](2026-interview.html) 14 个板块
 
 </td></tr>
-<tr><td align="right"><b>体量</b></td><td align="left">
+<tr><td align="right" nowrap><b>体量</b></td><td align="left">
 
 卷一 157 讲 / 156 集，≈ 29:55 音频 · 卷二 4:22:30，官方字幕 7,068 句
 
 </td></tr>
-<tr><td align="right"><b>标注</b></td><td align="left">
+<tr><td align="right" nowrap><b>标注</b></td><td align="left">
 
 40 个板块来源徽章 · 141 处置信度标注（落在正文结论上 120 处）· 50 条逐字引语 100% 带出处
 
 </td></tr>
-<tr><td align="right"><b>自查</b></td><td align="left">
+<tr><td align="right" nowrap><b>自查</b></td><td align="left">
 
 [audit.html](https://strangeyu911-tech.github.io/justin-sun-corpus/audit.html)：标签平衡、目录对齐、检索锚点、引语覆盖、行内样式、可访问名称，全部由脚本实测
 
 </td></tr>
-<tr><td align="right"><b>交流</b></td><td align="left">
+<tr><td align="right" nowrap><b>交流</b></td><td align="left">
 
 QQ 群 **1130141971**（去 QQ 里搜群号）
 
 </td></tr>
-<tr><td align="right"><b>许可</b></td><td align="left">
+<tr><td align="right" nowrap><b>许可</b></td><td align="left">
 
 [MIT](LICENSE)：整理、标注、编排与代码 · 原始素材著作权归各自权利人，不随仓库分发音频
 
@@ -66,7 +66,7 @@ QQ 群 **1130141971**（去 QQ 里搜群号）
 
 | | 卷一 | 卷二 |
 |---|---|---|
-| 内容年份 | **2016 – 2017** | **2026** |
+| 年份 | **2016 – 2017** | **2026** |
 | 形态 | 喜马拉雅付费音频专栏，全 156 集 | 一次 4 小时 22 分长访谈，40 章 |
 | 体量 | 157 讲 / 156 集，≈ 29:55 音频 | 4:22:30，官方字幕 7,068 句 |
 | 页面 | [`2016-2017-wealthfreedom.html`](2016-2017-wealthfreedom.html) | [`2026-interview.html`](2026-interview.html) |
