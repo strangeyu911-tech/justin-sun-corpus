@@ -17,6 +17,7 @@
 [![置信度标注](https://img.shields.io/badge/%E7%BD%AE%E4%BF%A1%E5%BA%A6%E6%A0%87%E6%B3%A8-141%20%E5%A4%84-915930?style=flat-square)](#置信度标注长什么样)
 [![逐字引语](https://img.shields.io/badge/%E9%80%90%E5%AD%97%E5%BC%95%E8%AF%AD-50%20%E6%9D%A1%E5%B8%A6%E5%87%BA%E5%A4%84-565a5f?style=flat-square)](#置信度标注长什么样)
 [![素材](https://img.shields.io/badge/%E7%B4%A0%E6%9D%90-7%2C068%20%E5%8F%A5%E5%AD%97%E5%B9%95-565a5f?style=flat-square)](#素材来源强度依次递减)
+[![电子书](https://img.shields.io/badge/%E7%94%B5%E5%AD%90%E4%B9%A6-PDF%20%2F%20EPUB-3451b2?style=flat-square)](https://github.com/strangeyu911-tech/justin-sun-corpus/releases/tag/ebook-2026-10)
 [![许可](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-MIT-565a5f?style=flat-square)](#许可)
 
 ### [打开在线阅读](https://strangeyu911-tech.github.io/justin-sun-corpus/) · [站点自检](https://strangeyu911-tech.github.io/justin-sun-corpus/audit.html)
@@ -30,6 +31,11 @@
 <tr><td align="right" nowrap><b>体量</b></td><td align="left">
 
 卷一 157 讲 / 156 集，≈ 29:55 音频 · 卷二 4:22:30，官方字幕 7,068 句
+
+</td></tr>
+<tr><td align="right" nowrap><b>离线</b></td><td align="left">
+
+[电子书 PDF / EPUB](https://github.com/strangeyu911-tech/justin-sun-corpus/releases/tag/ebook-2026-10)：A4 PDF（133 页，带页码、目录与书签）+ EPUB3（6 章，可重排，适配阅读器与电子墨水屏）。封面与扉页印有整理者和完整网址
 
 </td></tr>
 <tr><td align="right" nowrap><b>标注</b></td><td align="left">
