@@ -9,7 +9,7 @@ SRC = {
     "vol1": os.path.join(RAW, "wealthfreedom", "孙宇晨_财富自由革命之路_80讲总结.html"),
     "vol2": os.path.join(RAW, "sunyuchentalk", "对话孙宇晨_4小时访谈总结.html"),
 }
-CANON = "https://strangeyu911-tech.github.io/justin-sun-corpus/"
+CANON = "https://justin.strangeyu.xyz/"
 GH = "https://github.com/strangeyu911-tech/justin-sun-corpus"
 
 import sys

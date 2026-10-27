@@ -75,18 +75,18 @@ const html = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>十年之后回头看：他 2017 年说的，今天怎么样了（卷三）· 孙割这十年</title>
 <meta name="description" content="把孙宇晨 2016–2017 年音频课里的断言逐条拿到今天核对：53 条里说中 10、部分说中 36、说错 4。结论是「方向常常对，精度基本不准」。">
-<link rel="canonical" href="https://strangeyu911-tech.github.io/justin-sun-corpus/volume3.html">
+<link rel="canonical" href="https://justin.strangeyu.xyz/volume3.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="孙割这十年">
-<meta property="og:url" content="https://strangeyu911-tech.github.io/justin-sun-corpus/volume3.html">
+<meta property="og:url" content="https://justin.strangeyu.xyz/volume3.html">
 <meta property="og:title" content="十年之后回头看：他 2017 年说的，今天怎么样了">
 <meta property="og:description" content="53 条断言逐条核对：方向常常对，精度基本不准。">
-<meta property="og:image" content="https://strangeyu911-tech.github.io/justin-sun-corpus/assets/og.png">
+<meta property="og:image" content="https://justin.strangeyu.xyz/assets/og.png">
 <meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="十年之后回头看 · 孙割这十年 卷三">
 <meta name="twitter:description" content="53 条断言逐条核对：方向常常对，精度基本不准。">
-<meta name="twitter:image" content="https://strangeyu911-tech.github.io/justin-sun-corpus/assets/og.png">
+<meta name="twitter:image" content="https://justin.strangeyu.xyz/assets/og.png">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230f766e'/%3E%3Cpath d='M10 7.6v8.8l7-4.4z' fill='%23fbfaf8'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/site.css">
 <script>try{var t=localStorage.getItem('sycn-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>

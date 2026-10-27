@@ -15,7 +15,7 @@ SRC = {
     "vol2": os.path.join(RAW, "sunyuchentalk", "对话孙宇晨_4小时访谈总结.html"),
 }
 GH = "https://github.com/strangeyu911-tech/justin-sun-corpus"
-CANON = "https://strangeyu911-tech.github.io/justin-sun-corpus/"
+CANON = "https://justin.strangeyu.xyz/"
 
 LOGO = ('<svg class="logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">'
         '<rect width="24" height="24" rx="6" fill="#0f766e"/>'

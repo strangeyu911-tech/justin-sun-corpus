@@ -72,11 +72,11 @@ const html = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>可以拿走的部分：孙割观点使用说明 · 孙割这十年</title>
 <meta name="description" content="对 136 条断言的可信度分级：哪些经得起核对、哪些只能参考方向、哪些别引用；外加 10 条不依赖预测对错也成立的可迁移方法论。">
-<link rel="canonical" href="https://strangeyu911-tech.github.io/justin-sun-corpus/takeaway.html">
+<link rel="canonical" href="https://justin.strangeyu.xyz/takeaway.html">
 <meta property="og:site_name" content="孙割这十年">
 <meta property="og:title" content="可以拿走的部分：孙割观点使用说明">
 <meta property="og:description" content="136 条断言的可信度分级 + 10 条可迁移方法论。">
-<meta property="og:image" content="https://strangeyu911-tech.github.io/justin-sun-corpus/assets/og.png">
+<meta property="og:image" content="https://justin.strangeyu.xyz/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="可以拿走的部分 · 孙割这十年">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230f766e'/%3E%3Cpath d='M10 7.6v8.8l7-4.4z' fill='%23fbfaf8'/%3E%3C/svg%3E">

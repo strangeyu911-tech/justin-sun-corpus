@@ -94,7 +94,7 @@ PLAYWRIGHT_HOME=<node_modules 路径> node _build/accept.mjs
 ```
 
 它会自己起一个本地静态服务（默认 8777）、跑完 17 条断言、出证据截图到 `_build/shots/`，
-最后自己关掉服务和浏览器。也可以直接指向线上：`node _build/accept.mjs https://strangeyu911-tech.github.io/justin-sun-corpus/`
+最后自己关掉服务和浏览器。也可以直接指向线上：`node _build/accept.mjs https://justin.strangeyu.xyz/`
 
 覆盖：日夜模式切换 + `localStorage` 持久化、全站检索命中数与面板、无命中时的引导文案、
 分享菜单 12 渠道与 `aria-expanded`、Esc 收起、正文高亮计数一致、高亮不越界到顶部栏与目录、
