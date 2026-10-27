@@ -12,7 +12,7 @@
 
 素材可能过时，转写可能有错。发现写错了，欢迎[提 issue](https://github.com/strangeyu911-tech/justin-sun-corpus/issues)。
 
-[![在线阅读](https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB-%E7%82%B9%E8%BF%99%E9%87%8C%E6%89%93%E5%BC%80-3451b2?style=flat-square)](https://justin.strangeyu.xyz/)
+[![在线阅读](https://img.shields.io/badge/%E5%9C%A8%E7%BA%BF%E9%98%85%E8%AF%BB-%E7%82%B9%E8%BF%99%E9%87%8C%E6%89%93%E5%BC%80-3451b2?style=flat-square)](https://sun.strangeyu.xyz/)
 [![卷](https://img.shields.io/badge/%E5%8D%B7-2%20%E5%8D%B7%20%C2%B7%2040%20%E6%9D%BF%E5%9D%97-18794e?style=flat-square)](#两卷分别是什么)
 [![置信度标注](https://img.shields.io/badge/%E7%BD%AE%E4%BF%A1%E5%BA%A6%E6%A0%87%E6%B3%A8-141%20%E5%A4%84-915930?style=flat-square)](#置信度标注长什么样)
 [![逐字引语](https://img.shields.io/badge/%E9%80%90%E5%AD%97%E5%BC%95%E8%AF%AD-50%20%E6%9D%A1%E5%B8%A6%E5%87%BA%E5%A4%84-565a5f?style=flat-square)](#置信度标注长什么样)
@@ -20,12 +20,12 @@
 [![电子书](https://img.shields.io/badge/%E7%94%B5%E5%AD%90%E4%B9%A6-PDF%20%2F%20EPUB-3451b2?style=flat-square)](https://github.com/strangeyu911-tech/justin-sun-corpus/releases/tag/ebook-2026-10)
 [![许可](https://img.shields.io/badge/%E8%AE%B8%E5%8F%AF-MIT-565a5f?style=flat-square)](LICENSE)
 
-### [打开在线阅读](https://justin.strangeyu.xyz/) · [站点自检](https://justin.strangeyu.xyz/audit.html)
+### [打开在线阅读](https://sun.strangeyu.xyz/) · [站点自检](https://sun.strangeyu.xyz/audit.html)
 
 <table>
 <tr><td align="right" nowrap><b>读</b></td><td align="left">
 
-[首页](https://justin.strangeyu.xyz/)十年对照 9 组 · 卷一 [2016–2017](2016-2017-wealthfreedom.html) 26 个板块 · 卷二 [2026](2026-interview.html) 14 个板块
+[首页](https://sun.strangeyu.xyz/)十年对照 9 组 · 卷一 [2016–2017](2016-2017-wealthfreedom.html) 26 个板块 · 卷二 [2026](2026-interview.html) 14 个板块
 
 </td></tr>
 <tr><td align="right" nowrap><b>体量</b></td><td align="left">
@@ -45,7 +45,7 @@
 </td></tr>
 <tr><td align="right" nowrap><b>自查</b></td><td align="left">
 
-[audit.html](https://justin.strangeyu.xyz/audit.html)：标签平衡、目录对齐、检索锚点、引语覆盖、行内样式、可访问名称，全部由脚本实测
+[audit.html](https://sun.strangeyu.xyz/audit.html)：标签平衡、目录对齐、检索锚点、引语覆盖、行内样式、可访问名称，全部由脚本实测
 
 </td></tr>
 <tr><td align="right" nowrap><b>交流</b></td><td align="left">
@@ -163,7 +163,7 @@ extract.py  →  build.py  →  annotate.py  →  assemble.py  →  normalize.py
 
 自检六项（每次改动后重跑）：标签平衡（24 类差值 0）、目录双向对齐（无悬空 / 无孤立）、检索锚点（47 条 100% 命中）、引语覆盖（50/50）、行内样式（0）、可访问名称（0 缺失）。
 
-结果与问题台账见 [`audit.html`](audit.html)（[在线](https://justin.strangeyu.xyz/audit.html)）。
+结果与问题台账见 [`audit.html`](audit.html)（[在线](https://sun.strangeyu.xyz/audit.html)）。
 
 ## 自行部署
 

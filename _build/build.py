@@ -15,7 +15,7 @@ SRC = {
     "vol2": os.path.join(RAW, "sunyuchentalk", "对话孙宇晨_4小时访谈总结.html"),
 }
 GH = "https://github.com/strangeyu911-tech/justin-sun-corpus"
-CANON = "https://justin.strangeyu.xyz/"
+CANON = "https://sun.strangeyu.xyz/"
 
 LOGO = ('<svg class="logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">'
         '<rect width="24" height="24" rx="6" fill="#0f766e"/>'
@@ -118,6 +118,9 @@ def head(title, desc, canon, extra_js=""):
 <link rel="icon" href="%(favicon)s">
 <link rel="stylesheet" href="assets/site.css">
 <script>try{var t=localStorage.getItem('sycn-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<!-- Cloudflare Web Analytics -->
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "641afd57ea2e4104b246d11e3212d05a"}'></script>
+<!-- End Cloudflare Web Analytics -->
 </head>
 <body%(bodyattr)s>
 <div id="progress"></div>

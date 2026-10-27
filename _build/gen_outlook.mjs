@@ -56,11 +56,11 @@ const html = `<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>未来推演：从已核对的事实往下看 · 孙割这十年</title>
 <meta name="description" content="用已核对的事实与公开数据，对房产、加密、AI、工作、婚恋、健康做情景式推演——弱断言、多情景、每个推演都给证伪条件。">
-<link rel="canonical" href="https://justin.strangeyu.xyz/outlook.html">
+<link rel="canonical" href="https://sun.strangeyu.xyz/outlook.html">
 <meta property="og:site_name" content="孙割这十年">
 <meta property="og:title" content="未来推演：从已核对的事实往下看">
 <meta property="og:description" content="情景式推演：弱断言、多情景、每个推演都给证伪条件。">
-<meta property="og:image" content="https://justin.strangeyu.xyz/assets/og.png">
+<meta property="og:image" content="https://sun.strangeyu.xyz/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230f766e'/%3E%3Cpath d='M10 7.6v8.8l7-4.4z' fill='%23fbfaf8'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="assets/site.css">
@@ -80,6 +80,9 @@ const html = `<!DOCTYPE html>
 .ol-conf{font-size:13px;color:var(--muted);margin:2px 0 6px}
 .sec-anchor{margin:0 0 8px}
 </style>
+<!-- Cloudflare Web Analytics -->
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "641afd57ea2e4104b246d11e3212d05a"}'></script>
+<!-- End Cloudflare Web Analytics -->
 </head>
 <body>
 <div id="progress"></div>
